@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Альмира Вотрина](https://up.htmlacademy.ru/adaptive/13/user/625577).
-* Наставник: `Неизвестно`.
+* Наставник: Анастасия Норцова.
 
 ---
 
