@@ -1,0 +1,45 @@
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  color: @black;
+
+  background-color: @white;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  display: none;
+  visibility: hidden;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+  width: 250px;
+  min-height: 30px;
+  padding: 15px;
+
+  border: 1px solid @grey;
+
+  font-size: 18px;
+  line-height: 30px;
+}
+
+input:hover {
+  border: 1px solid @black;
+}
+
+input:focus {
+  border: 1px solid @pink;
+}

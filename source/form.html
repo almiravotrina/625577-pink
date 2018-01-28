@@ -1,73 +1,72 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-</head>
-<body>
-  <header class="page-header">
-    <section class="header-title">
-      <h1 class="header-title__item">
-        PINK
-      </h1>
-        <button class="header-title__item button-exit" type="button">x</button>
-    </section>
-    <nav class="main-nav">
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="photo.html">Фотографии</a>
-          </li>
-          <li class="site-list__item site-list__item--active">
-            <a>Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">HTML Academy</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <main class="page-main">
-    <section class="content-header">
-      <div class="content-header__wrapper">
-        <h2 class="content-header__title">
-          Конкурс на самое безбашенное путешествие с ПИНК
-        </h2>
-      </div>
-    </section>
-    <section class="user-form">
-      <div class="user-form__wrapper">
-        <p class="user-form__slogan">
-          Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
-        </p>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <div class="user-form__item">
-            <label class="user-form__label">
-              Фамилия:
-              <input class="user-form__input input-text" type="text" name="last-name" placeholder="Укажите фамилию *" required>
+  <head>
+      <meta charset="utf-8">
+      <link href="css/style.css" rel="stylesheet">
+      <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <section class="page-header__logo">
+        <a href="index.html" class="page-header__item"></a>
+        <button class="page-header__item page-header__item--button button button--unborder" type="button"></button>
+      </section>
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a>Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <section class="content-header">
+        <div class="content-header__wrapper">
+          <h2 class="content-header__title">
+            Конкурс на самое безбашенное путешествие с ПИНК
+          </h2>
+        </div>
+      </section>
+      <section class="user-form">
+        <div class="user-form__wrapper">
+          <p class="user-form__slogan">
+            Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
+          </p>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <div class="user-form__item">
+              <label class="user-form__label">
+                <p>Фамилия:</p>
+              <input class="user-form__input" type="text" name="last-name" placeholder="Укажите фамилию *" required>
             </label>
           </div>
           <div class="user-form__item">
             <label class="user-form__label">
-              Имя:
+              <p>Имя:</p>
               <input class="user-form__input" type="text" name="first-name" placeholder="Введите ваше имя *" required>
             </label>
           </div>
           <div class="user-form__item">
             <label class="user-form__label">
-              Отчество:
+              <p>Отчество:</p>
               <input class="user-form__input" type="text" name="middle-name" placeholder="Ну и отчество тоже">
             </label>
           </div>
-          <section class="user-form__item user-achievement">
-            <p class="user-achievement__title ">
-              Ваши безбашенные достижения в путешествии
+          <section class="user-form__item user-form__achievement">
+            <p class="user-form__achievement-title ">
+              Ваши безбашенные<br> достижения в путешествии
             </p>
-            <div class='checkbox-area'>
+            <div class='user-form__checkbox-area'>
               <label>
                 <input type='checkbox' name="achievement" value='shark' checked>
                 Сделал селфи с акулой
@@ -96,21 +95,21 @@
           </section>
           <div class="user-form__item">
             <label class="user-form__label">
-              Номер телефона
+              <p>Номер телефона</p>
               <input class="user-form__input" type="tel" name="tel" placeholder="Номер, пожалуйста">
             </label>
           </div>
           <div class="user-form__item">
             <label class="user-form__label">
-              Адрес почты
+              <p>Адрес почты</p>
               <input class="user-form__input" type="email" name="email" placeholder="Введите почту *" required>
             </label>
           </div>
-          <section class="user-form__item user-application">
-            <p class="user-application__title">
+          <section class="user-form__item user-form__application">
+            <p class="user-form__application-title">
               С каким приложением путешествовали?
             </p>
-            <div class='radio-area'>
+            <div class='user-form__radio-area'>
               <label>
                 <input type='radio' name='application' value='pink-ios' checked>
                 Pink для iOS
@@ -125,17 +124,17 @@
               </label>
             </div>
           </section>
-          <div class="user-form__item user-description">
-            <label class="user-description__title">
-              Опишите свои эмоции
-              <textarea class="user-form__input" name="emotions" rows="6">Можно прям в красках, не стесняясь в выражениях
-              </textarea>
+          <div class="user-form__item user-form__description">
+            <label class="user-form__label user-form__label--center">
+              <p>Опишите свои эмоции</p>
+              <textarea class="user-form__input" name="emotions" rows="6"
+                        placeholder="Mожно прям в красках, не стесняясь в выражениях"></textarea>
             </label>
           </div>
           <div class="user-form__item">
-              <button class="user-form__button button" type="submit">Отправить форму</button>
+              <button class="user-form__button button button--form" type="submit">Отправить форму</button>
             <p class="user-form__tip">
-              <span style="color: red">*</span> - обязательные поля
+              <span>*</span> - обязательные поля
             </p>
           </div>
         </form>
@@ -144,27 +143,19 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <div class="page-footer__logo">
-        <a class="page-footer__link page-footer__logo-image" href="index.html">
-          PINK
+      <div class="page-footer__item">
+        <a class="page-footer__link" href="index.html">
+          <img src="./img/logo-pink-blue-mobile.svg" width="150" height="40">
         </a>
       </div>
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://www.twitter.com/htmlacademy"></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy"></a>
-          </li>
-        </ul>
+      <div class="page-footer__item social">
+        <a class="social__link social__link--twitter" href="https://www.twitter.com/htmlacademy">твитер</a>
+        <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">фейсбук</a>
+        <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy">ютьюб</a>
       </div>
-      <div class="page-footer__copyright copyright">
+      <div class="page-footer__item page-footer__item--last copyright">
         <p class="copyright__text">Разработано</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">htmlacademy</a>
       </div>
     </div>
   </footer>
