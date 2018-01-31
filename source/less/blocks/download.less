@@ -1,7 +1,7 @@
 .download {
   min-height: 270px;
-  width: 100%;
-  margin: 0;
+  width: 320px; //фиксированная сетка
+  margin: 0 auto; //фиксированная сетка
   padding: 0;
 
   background-color: @dark-blue;
@@ -10,18 +10,19 @@
 }
 
 .download__wrapper {
-  width: 280px;
-  margin: 20px auto;
+  padding: 20px auto;
 }
 
 .download__button {
-  margin: 5px 0 10px 0;
+  margin: 30px 0;
 }
 
 .download__logos {
-  width: 240px;
-  height: 80px;
-  margin: 10px auto;
+  margin: 0 30px; // по 3 в ряд( при увеличении контента)
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
 }
 
 .download__link {
@@ -29,11 +30,9 @@
 }
 
 .download__logo {
-  width: 60px;
-  height: 60px;
-  margin: 10px 5px;
+  margin: 0 5px;
 }
 
 .download__text {
-  font-weight: lighter;
+  font-weight: 100;
 }

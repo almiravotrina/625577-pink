@@ -7,33 +7,42 @@
 
 .page-footer__wrapper {
   width: 320px;
-  margin: 40px auto 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  position: relative;
 }
 
 .page-footer__map {
-  height: 650px;
-  background-image: url("../../img/bg-map-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -30px;
 }
 
 .page-footer__contacts {
-  padding-top: 40px;
-  margin: 0;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  padding-bottom: 20px;
   text-align: center;
   background-color: @white;
 }
 
 .page-footer__item {
-  margin-bottom: 25px;
+  margin: 20px 0;
   align-self: center;
 }
 
-.page-footer__item--last {
+.page-footer__item:first-child {
+  margin-top: 40px;
+  align-self: center;
+}
+
+.page-footer__item:last-child {
   margin-bottom: 40px;
   align-self: center;
 }

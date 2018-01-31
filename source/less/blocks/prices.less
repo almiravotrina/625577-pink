@@ -1,8 +1,10 @@
 .prices {
-  width: 100%;
-  margin: 0;
+  width: 320px;
+  margin: 0 auto;
+  overflow-x: hidden;
   padding: 0;
   background-color: @light-grey;
+  z-index: 2;//чтобы лечь на  карту футера
 }
 /*
 .prices::before {
@@ -16,20 +18,18 @@
   left: 0;
 }
 */
-.prices__wrapper {
-  margin-left: auto;
-  margin-right: auto;
-}
 
 .prices__list {
   margin: 0;
   padding: 0;
   margin-top: 90px;
   list-style: none;
+  overflow-x: hidden;
 }
 
 .prices__item {
-  margin: 0 1px 0 1px;
+  width: 280px;
+  border-left: 1px solid @light-grey;
   background-color: @white;
 }
 
@@ -55,7 +55,7 @@
 .prices__cost {
   margin: 0;
   font-size: 24px;
-  font-weight: lighter;
+  font-weight: 100;
   line-height: 30px;
 }
 

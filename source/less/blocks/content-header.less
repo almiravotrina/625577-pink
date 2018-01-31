@@ -1,28 +1,23 @@
 .content-header {
-  width: 100%;
-  height: 460px;
+  display: flex;
+  width: 320px; //фиксированная сетка
+  margin: 0 auto; //центрую
+  height: 460px; //на главном окне фиксир. высота с картинкой, без текста, а на  других на этот фон наслаиваются
   padding: 0;
-  margin: 0;
-
-  background: url("../../img/bg-back-mobile@1x.jpg") no-repeat 50% 50%;
+  margin-top: -65px; // видно сквозь закрытое меню
+  background: url("../../img/bg-back-mobile@1x.jpg") no-repeat 50% 0;
   background-size: cover;
-  z-index: -1;
   color: @white;
 }
 
-.content-header__wrapper {
-  width: 100%;
-  padding-top: 90px;
-}
-
 .content-header__intro {
-  margin-top: 82px;
+  display: block;
+  margin-right: auto;
+  margin-top: auto;
 }
 
 .content-header__title {
-  width: 280px;
-  height: 96px;
-  margin: 10px auto;
+  margin: 100px 20px 0 20px;
   padding: 0;
 
   text-align: center;

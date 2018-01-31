@@ -1,21 +1,19 @@
 .user-form {
-  width: 100%;
-  margin: 0;
+  width: 320px;
+  margin: 0 auto;
   padding: 0;
-  margin-top: -225px;
+  margin-top: -220px; //залезает на предыдущий блок
   background-color: @white;
 }
 
 .user-form__wrapper {
-  width: 320px;
-  margin: 20px auto 0 auto;
   display: flex;
   flex-direction: column;
 }
 
 .user-form__slogan {
   padding: 0;
-  margin: 20px;
+  margin: 40px 20px;
   line-height: 30px;
   text-align: center;
 }
@@ -86,12 +84,16 @@
   }
 }
 
+.user-form__radio-area label {
+  line-height: 75px;
+}
+
 .user-form__button {
   margin: 15px 0;
 }
 
 .user-form__tip {
-  margin: 25px 0 10px 0;
+  margin: 25px 0 15px 0;
   text-transform: uppercase;
   text-align: center;
 

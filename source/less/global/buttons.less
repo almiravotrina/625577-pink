@@ -1,11 +1,10 @@
 .button {
-  width: 254px;
+  min-width: 254px;
   display: inline-block;
-  vertical-align: top;
   border: 3px solid @white;
   border-radius: 25px;
 
-  padding: 10px;
+  padding: 15px;
   font-size: 18px;
   font-weight: bold;
   text-align: center;
@@ -13,10 +12,28 @@
 
   color: @white;
   background-color: inherit;
+
+  &:hover {
+    color: @pink;
+    background-color: @white;
+  }
+
+  &:active {
+    color: fade(@pink, 30%);
+  }
 }
 
 .button--unborder {
   border: none;
+
+  &:hover {
+    background-color: inherit;
+  }
+
+  &:active {
+    color: @white;
+    border: none;
+  }
 }
 
 .button--margin {
@@ -26,11 +43,33 @@
 .button--pink {
   border: 3px solid @pink;
   color: @pink;
+
+  &:hover {
+    color: @white;
+    background-color: @pink;
+  }
+
+  &:active {
+    color: fade(@white, 30%);
+    background-color: @pink;
+  }
 }
 
 .button--grey {
   border: 3px solid @grey;
   color: @grey;
+
+  &:hover {
+    color: fade(@dark-grey, 30%);
+    border: 3px solid fade(@dark-grey, 30%);
+    background-color: inherit;
+  }
+
+  &:active {
+    color: fade(@white, 30%);
+    border: fade(@dark-grey, 30%);
+    background-color: fade(@dark-grey, 30%);
+  }
 }
 
 .button-heart {
@@ -53,6 +92,21 @@
   border: none;
   border-radius: 2px;
   text-transform: uppercase;
+
+  &:hover {
+    color: @white;
+    background-color: #1b9b5e;
+  }
+
+  &:active {
+    color: fade(@white, 30%);
+    background-color: #1b9b5e;
+  }
+
+  &--disabled {
+    color: @white;
+    background-color: @light-grey;
+  }
 }
 
 .button-editor {

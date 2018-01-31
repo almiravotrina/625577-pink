@@ -2,28 +2,31 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-    <header class="page-header">
-      <section class="page-header__logo">
-        <a href="index.html" class="page-header__item"></a>
-        <button class="page-header__item page-header__item--button button button--unborder" type="button"></button>
-      </section>
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
+  <header class="page-header">
+    <nav class="main-nav main-nav--closed">
+      <div class="main-nav__header">
+        <a href="index.html" class="main-nav__logo">
+          <img src="img/logo-pink-white-mobile.svg" width="75" height="25" alt="Логотип">
+        </a>
+        <button class="main-nav__toggle" type="button"></button>
+      </div>
+      <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
               <a href="index.html">Главная</a>
             </li>
-            <li class="site-list__item site-list__item--active">
-              <a>Фотографии</a>
+            <li class="main-nav__item main-nav__item--active">
+              Фотографии
             </li>
-            <li class="site-list__item">
+            <li class="main-nav__item">
               <a href="form.html">Конкурс</a>
             </li>
-            <li class="site-list__item">
+            <li class="main-nav__item">
               <a href="#">HTML Academy</a>
             </li>
           </ul>
@@ -32,11 +35,7 @@
     </header>
     <main class="page-main">
       <section class="content-header">
-        <div class="content-header__wrapper">
-          <h2 class="content-header__title">
-            Фотографии пользователей
-          </h2>
-        </div>
+        <h2 class="content-header__title">Фотографии пользователей</h2>
       </section>
     <section class="gallery">
       <div class="gallery__wrapper">
@@ -46,10 +45,10 @@
         </p>
         <div class="gallery__list">
           <img class="gallery__image" src="./img/panorama-mobile@1x.jpg" alt="Фото Анны">
-          <figure class="gallery__item gallery__item--without-top-magrin">
-            <cite class="gallery__author">Анна
+          <figure class="gallery__item">
+            <p class="gallery__author">Анна
               <span class="gallery__item-time">(5 минут назад)</span>
-            </cite>
+            </p>
             <p class="gallery__text">
               Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
             </p>
@@ -61,9 +60,9 @@
           </figure>
           <figure class="gallery__item">
             <img class="gallery__image" src="./img/photo-car-mobile@1x.jpg" alt="Фото Левона">
-            <cite class="gallery__author">Левон
+            <p class="gallery__author">Левон
               <span class="gallery__item-time">(5 часов назад)</span>
-            </cite>
+            </p>
             <p class="gallery__text">
               Вчера он на луну летал, сегодня в руки к нам попал!
             </p>
@@ -75,9 +74,9 @@
           </figure>
           <figure class="gallery__item">
             <img class="gallery__image" src="./img/photo-drumset-mobile@1x.jpg" alt="Фото Антона">
-            <cite class="gallery__author">Антон
+            <p class="gallery__author">Антон
               <span class="gallery__item-time">(12 часов назад)</span>
-            </cite>
+            </p>
             <p class="gallery__text">
               Соседи будут рады!
             </p>
@@ -89,9 +88,9 @@
           </figure>
           <figure class="gallery__item">
             <img class="gallery__image" src="./img/photo-window-mobile@1x.jpg" alt="Фото Бориса">
-            <cite class="gallery__author">Борис
+            <p class="gallery__author">Борис
               <span class="gallery__item-time">(25 часов назад)</span>
-            </cite>
+            </p>
             <p class="gallery__text">
               Здесь могла быть ваша цитата о высоком и вечном.
             </p>
@@ -103,9 +102,9 @@
           </figure>
           <figure class="gallery__item">
             <img class="gallery__image" src="./img/photo-fair-mobile@1x.jpg" alt="Фото Сергея">
-            <cite class="gallery__author">Сергей
+            <p class="gallery__author">Сергей
               <span class="gallery__item-time">(25 часов назад)</span>
-            </cite>
+            </p>
             <p class="gallery__text">
               Самая кубанская в мире!
             </p>
@@ -117,9 +116,9 @@
           </figure>
           <figure class="gallery__item">
             <img class="gallery__image" src="./img/photo-pov-mobile@1x.jpg" alt="Фото Максима">
-            <cite class="gallery__author">Максим
+            <p class="gallery__author">Максим
               <span class="gallery__item-time">(40 часов назад)</span>
-            </cite>
+            </p>
             <p class="gallery__text">
               Где снег-то?
             </p>
@@ -131,9 +130,9 @@
           </figure>
           <figure class="gallery__item">
             <img class="gallery__image" src="./img/photo-wing-mobile@1x.jpg" alt="Фото Надежды">
-            <cite class="gallery__author">Надежда
+            <p class="gallery__author">Надежда
               <span class="gallery__item-time">(45 часов назад)</span>
-            </cite>
+            </p>
             <p class="gallery__text">
               Всем GM и взаимные лайки!
             </p>
@@ -161,8 +160,8 @@
           <button class="button-editor button-editor--contrast" type="button">
           </button>
           <input class="editor__range" type="range" min=0 max=100 value="85">
-          <input class="editor__range visually-hidden" type="range" min=-100 max=100 value="0">
-          <input class="editor__range visually-hidden" type="range" min=-100 max=100 value="0">
+          <input class="editor__range visibility-hidden" type="range" min=-100 max=100 value="0">
+          <input class="editor__range visibility-hidden" type="range" min=-100 max=100 value="0">
         </div>
         <div class="editor__buttons-group">
           <button class="button button--pink button--margin" type="submit">Запостить</button>
@@ -183,11 +182,12 @@
         <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">фейсбук</a>
         <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy">ютьюб</a>
       </div>
-      <div class="page-footer__item page-footer__item--last copyright">
+      <div class="page-footer__item copyright">
         <p class="copyright__text">Разработано</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">htmlacademy</a>
       </div>
     </div>
   </footer>
+  <script src="./js/app.js"></script>
 </body>
 </html>

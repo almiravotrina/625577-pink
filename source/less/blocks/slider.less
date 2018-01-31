@@ -8,11 +8,19 @@
 .slider__list {
   display: flex;
   flex-direction: row;
+  left: -590px;
 }
 
 .slider__item {
   width: 280px;
+  flex-shrink: 0;
 }
+
+.slider__item--hidden {
+  display: none;
+  visibility: hidden;
+}
+
 
 .slider__toggles {
   width: 65px;

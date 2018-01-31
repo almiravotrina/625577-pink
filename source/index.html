@@ -2,28 +2,31 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
     <header class="page-header">
-      <section class="page-header__logo">
-        <a href="index.html" class="page-header__item"></a>
-        <button class="page-header__item page-header__item--button button button--unborder" type="button"></button>
-      </section>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed">
+        <div class="main-nav__header">
+          <a href="index.html" class="main-nav__logo">
+            <img src="img/logo-pink-white-mobile.svg" width="75" height="25" alt="Логотип">
+          </a>
+          <button class="main-nav__toggle" type="button"></button>
+        </div>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a>Главная</a>
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--active">
+              Главная
             </li>
-            <li class="site-list__item">
+            <li class="main-nav__item">
               <a href="photo.html">Фотографии</a>
             </li>
-            <li class="site-list__item">
+            <li class="main-nav__item">
               <a href="form.html">Конкурс</a>
             </li>
-            <li class="site-list__item">
+            <li class="main-nav__item">
               <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
@@ -32,12 +35,10 @@
     </header>
     <main class="page-main">
       <section class="content-header">
-        <div class="content-header__wrapper">
-          <h2 class="visually-hidden">
-            Скачать PINK
-          </h2>
-            <img class="content-header__intro" src="./img/iphone-hand-mobile@1x.png" width="260" height="auto">
-        </div>
+        <h2 class="visibility-hidden">
+          Взгляните <br> на жизнь<br> иначе!
+        </h2>
+        <img class="content-header__intro" src="./img/iphone-hand-mobile@1x.png" width="260" height="auto">
       </section>
       <section class="download">
         <div class="download__wrapper">
@@ -53,7 +54,7 @@
               <img class="download__logo" src="./img/logo-microsoft.svg" width="60" height="60" alt="windows">
             </a>
           </div>
-          <p class="download__text"> Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          <p class="download__text"> Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
         </div>
       </section>
       <section class="information">
@@ -83,6 +84,7 @@
                 </p>
               </li>
             </ul>
+            <img class="advantages__image" src="./img/iphone-screen-mobile@1x.png"  width="160" height = "320" alt="телефон">
           </div>
         </div>
       </section>
@@ -90,6 +92,20 @@
         <div class="reviews__wrapper slider">
           <div class="reviews__list  slider__list">
             <blockquote class="reviews__item  slider__item">
+              <cite class="reviews__author-name">Николай Петров</cite>
+              <p class="reviews__text">
+                "Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+                А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
+              </p>
+            </blockquote>
+            <blockquote class="reviews__item  slider__item--hidden">
+              <cite class="reviews__author-name">Николай Петров</cite>
+              <p class="reviews__text">
+                "Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+                А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
+              </p>
+            </blockquote>
+            <blockquote class="reviews__item  slider__item--hidden">
               <cite class="reviews__author-name">Николай Петров</cite>
               <p class="reviews__text">
                 "Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
@@ -107,7 +123,7 @@
       <section class="prices">
         <div class="prices__wrapper slider">
           <ul class="prices__list  slider__list">
-            <li class="prices__item slider__item">
+            <li class="prices__item slider__item slider__item--active">
               <div class=" prices__tariff">
                 <p class="prices__name">База</p>
                 <p class="prices__cost">1,99 USD</p>
@@ -178,21 +194,21 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <div class="page-footer__map">
-          <div class="page-footer__contacts contacts">
-            <h1 class="contacts__title">Остались вопросы?<br> Свяжитесь с нами!</h1>
-            <p class="contacts__text">
-              <span class="contacts__label">Звоните:</span> +7 (812) 555-66-66
-            </p>
-            <p class="contacts__text">
-              <span class="contacts__label">Пишите:</span> mail@htmlacademy.ru
-            </p>
-            <p class="contacts__text">
-              <span class="contacts__label">Приезжайте в гости:</span> ул. Большая <br> Конюшенная, 19/8
-            </p>
-          </div>
+        <img class="page-footer__map" src="./img/bg-map-mobile@1x.png" width="'320" >
+        <div class="page-footer__contacts contacts">
+          <h1 class="contacts__title">Остались вопросы?<br> Свяжитесь с нами!</h1>
+          <p class="contacts__text">
+            <span class="contacts__label">Звоните:</span> +7 (812) 555-66-66
+          </p>
+          <p class="contacts__text">
+            <span class="contacts__label">Пишите:</span> mail@htmlacademy.ru
+          </p>
+          <p class="contacts__text">
+            <span class="contacts__label">Приезжайте в гости:</span> ул. Большая <br> Конюшенная, 19/8
+          </p>
         </div>
       </div>
     </footer>
+    <script src="./js/app.js"></script>
   </body>
 </html>
