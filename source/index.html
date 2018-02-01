@@ -2,81 +2,89 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
     <header class="page-header">
-      <section class="header-title">
-        <h1 class="header-title__item">
-          PINK
-        </h1>
-        <button class="header-title__item button-exit" type="button">x</button>
-      </section>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed">
+        <div class="main-nav__header">
+          <a href="index.html" class="main-nav__logo">
+            <img src="img/logo-pink-white-mobile.svg" width="75" height="25" alt="Логотип">
+          </a>
+          <button class="main-nav__toggle" type="button"></button>
+        </div>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a>Главная</a>
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--active">
+              Главная
             </li>
-            <li class="site-list__item">
+            <li class="main-nav__item">
               <a href="photo.html">Фотографии</a>
             </li>
-            <li class="site-list__item">
+            <li class="main-nav__item">
               <a href="form.html">Конкурс</a>
             </li>
-            <li class="site-list__item">
-              <a href="#">HTML Academy</a>
+            <li class="main-nav__item">
+              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
     <main class="page-main">
-      <section class="content-header content-header__intro">
-        <div class="content-header__wrapper">
-          <h2 class="visually-hidden">
-            Скачать PINK
-          </h2>
-        </div>
+      <section class="content-header">
+        <h2 class="visibility-hidden">
+          Взгляните <br> на жизнь<br> иначе!
+        </h2>
+        <img class="content-header__intro" src="./img/iphone-hand-mobile@1x.png" width="260" height="auto">
       </section>
       <section class="download">
         <div class="download__wrapper">
-          <button class="download__button button button--white" type="button">Скачать приложение</button>
+          <a class="download__button button" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
           <div class="download__logos">
-            <img class="download__logo" src="http://placehold.it/150x100" width="40" height="40" alt="apple">
-            <img class="download__logo" src="http://placehold.it/150x100" width="40" height="40" alt="android">
-            <img class="download__logo" src="http://placehold.it/150x100" width="40" height="40" alt="windows">
+            <a class="download__link" href="https://www.apple.com/">
+              <img class="download__logo" src="./img/logo-apple.svg" width="60" height="60" alt="apple">
+            </a>
+            <a class="download__link" href="https://www.android.com/">
+              <img class="download__logo" src="./img/logo-android.svg" width="60" height="60" alt="android">
+            </a>
+            <a class="download__link" href="https://www.microsoft.com/">
+              <img class="download__logo" src="./img/logo-microsoft.svg" width="60" height="60" alt="windows">
+            </a>
           </div>
-          <p class="download__text"> Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          <p class="download__text"> Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
         </div>
       </section>
       <section class="information">
         <div class="information__wrapper">
           <header class="information__header">
-            <h2 class="information__slogan">Устали от серости мегаполиса?</h2>
-            <h2 class="information__slogan"> Нам есть что вам предложить!</h2>
+            <h2 class="information__slogan">Устали от серости мегаполиса?<br>
+                <br>Нам есть, что вам предложить!</h2>
           </header>
           <div class="advantages">
             <ul class="advantages__list ">
               <li class="advantages__item">
                 <h3 class="advantages__title">Поднимает настроение</h3>
                   <p class="advantages__description">
-                    Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+                    Приложение позволит вам победить осеннюю хандру и депрессию <br> буквально в несколько кликов!
                   </p>
               </li>
               <li class="advantages__item">
                 <h3 class="advantages__title">Меняет мир вокруг</h3>
                   <p class="advantages__description">
-                    Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+                    Сделайте снимок и украсьте его <br> смайликом или текстовой подписью,<br> чтобы усилить эффект
                   </p>
               </li>
               <li class="advantages__item">
                 <h3 class="advantages__title">Заводит новых друзей</h3>
                 <p class="advantages__description">
-                  Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+                  Ставьте лайки, комментируйте, <br> делитесь фотографиями с друзьями и <br> заводите новых
                 </p>
               </li>
             </ul>
+            <img class="advantages__image" src="./img/iphone-screen-mobile@1x.png"  width="160" height = "320" alt="телефон">
           </div>
         </div>
       </section>
@@ -90,69 +98,117 @@
                 А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
               </p>
             </blockquote>
+            <blockquote class="reviews__item  slider__item--hidden">
+              <cite class="reviews__author-name">Николай Петров</cite>
+              <p class="reviews__text">
+                "Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+                А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
+              </p>
+            </blockquote>
+            <blockquote class="reviews__item  slider__item--hidden">
+              <cite class="reviews__author-name">Николай Петров</cite>
+              <p class="reviews__text">
+                "Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+                А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
+              </p>
+            </blockquote>
           </div>
             <p class="reviews__toggles slider__toggles">
-              <button class="slider__toggle" type="button">1</button>
-              <button class="slider__toggle" type="button">2</button>
-              <button class="slider__toggle" type="button">3</button>
+              <button class="slider__toggle" type="button"></button>
+              <button class="slider__toggle" type="button"></button>
+              <button class="slider__toggle" type="button"></button>
             </p>
         </div>
       </section>
       <section class="prices">
         <div class="prices__wrapper slider">
           <ul class="prices__list  slider__list">
-            <li class="prices__item slider__item">
-              <div class=" prices__tariff slider__tariff">
-                <div class="prices__tooltip tooltip">
-                  <p class="tooltip__text">Хит</p>
-                </div>
-                <p class="prices__name slider__name">Стандарт</p>
-                <p class="prices__cost slider__cost">3,99 USD</p>
+            <li class="prices__item slider__item slider__item--active">
+              <div class=" prices__tariff">
+                <p class="prices__name">База</p>
+                <p class="prices__cost">1,99 USD</p>
               </div>
-              <ul>
-                <li>
+              <ul class="prices__table">
+                <li class="prices__services">
                   <p class="prices__service slider__service">Розовый фильтр</p>
-                    <img class="prices__image slider__image service-image service-image--available" src="http://placehold.it/150x100"
-                    width="50" height="50" alt="Available">
+                  <img class="prices__image" src="./img/icon-yes.svg" width="30" height="30" alt="Available">
                 </li>
-                <li>
+                <li class="prices__services">
                   <p class="prices__service slider__service">Смайлики</p>
-                    <img class="prices__image slider__image service-image service-image--available" src="http://placehold.it/150x100"
-                    width="50" height="50" alt="Available">
+                  <img class="prices__image" src="./img/icon-no.svg" width="30" height="30" alt="Unavailable">
                 </li>
-                <li>
+                <li class="prices__services">
                   <p class="prices__service slider__service">Комментарии</p>
-                    <img class="prices__image slider__image service-image service-image--unavailable" src="http://placehold.it/150x100"
-                    width="50" height="50" alt="Unavailable">
+                  <img class="prices__image" src="./img/icon-no.svg" width="30" height="30" alt="Unavailable">
+                </li>
+              </ul>
+            </li>
+            <li class="prices__item slider__item">
+              <div class=" prices__tariff">
+                <p class="prices__name">Стандарт</p>
+                <p class="prices__cost">3,99 USD</p>
+              </div>
+              <ul class="prices__table">
+                <li class="prices__services">
+                  <p class="prices__service slider__service">Розовый фильтр</p>
+                  <img class="prices__image" src="./img/icon-yes.svg" width="30" height="30" alt="Available">
+                </li>
+                <li class="prices__services">
+                  <p class="prices__service slider__service">Смайлики</p>
+                    <img class="prices__image" src="./img/icon-yes.svg" width="30" height="30" alt="Available">
+                </li>
+                <li class="prices__services">
+                  <p class="prices__service slider__service">Комментарии</p>
+                  <img class="prices__image" src="./img/icon-no.svg" width="30" height="30" alt="Unavailable">
+                </li>
+              </ul>
+            </li>
+            <li class="prices__item slider__item">
+              <div class=" prices__tariff">
+                <p class="prices__name">Анлим</p>
+                <p class="prices__cost">9,99 USD</p>
+              </div>
+              <ul class="prices__table">
+                <li class="prices__services">
+                  <p class="prices__service slider__service">Розовый фильтр</p>
+                  <img class="prices__image" src="./img/icon-yes.svg" width="30" height="30" alt="Available">
+                </li>
+                <li class="prices__services">
+                  <p class="prices__service slider__service">Смайлики</p>
+                  <img class="prices__image" src="./img/icon-yes.svg" width="30" height="30" alt="Available">
+                </li>
+                <li class="prices__services">
+                  <p class="prices__service slider__service">Комментарии</p>
+                  <img class="prices__image" src="./img/icon-yes.svg" width="30" height="30" alt="Available">
                 </li>
               </ul>
             </li>
           </ul>
             <p class="prices__toggles slider__toggles">
-              <button class="slider__toggle" type="button">1</button>
-              <button class="slider__toggle" type="button">2</button>
-              <button class="slider__toggle" type="button">3</button>
+              <button class="slider__toggle" type="button"></button>
+              <button class="slider__toggle" type="button"></button>
+              <button class="slider__toggle" type="button"></button>
             </p>
         </div>
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__map">
+      <div class="page-footer__wrapper">
+        <img class="page-footer__map" src="./img/bg-map-mobile@1x.png" width="'320" >
         <div class="page-footer__contacts contacts">
           <h1 class="contacts__title">Остались вопросы?<br> Свяжитесь с нами!</h1>
-            <p class="contacts__text">
-              <span class="contacts__label">Звоните:</span> +7 (812) 555-66-66
-            </p>
-            <p class="contacts__text">
-              <span class="contacts__label">Пишите:</span> mail@htmlacademy.ru
-            </p>
-            <p class="contacts__text">
-              <span class="contacts__label">Приезжайте в гости:</span> ул. Большая Конюшенная, 19/8
-            </p>
-          </div>
-        <div class="white-triangle">
+          <p class="contacts__text">
+            <span class="contacts__label">Звоните:</span> +7 (812) 555-66-66
+          </p>
+          <p class="contacts__text">
+            <span class="contacts__label">Пишите:</span> mail@htmlacademy.ru
+          </p>
+          <p class="contacts__text">
+            <span class="contacts__label">Приезжайте в гости:</span> ул. Большая <br> Конюшенная, 19/8
+          </p>
         </div>
       </div>
     </footer>
+    <script src="./js/app.js"></script>
   </body>
 </html>

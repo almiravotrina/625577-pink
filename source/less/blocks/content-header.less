@@ -1,0 +1,27 @@
+.content-header {
+  display: flex;
+  width: 320px; //фиксированная сетка
+  margin: 0 auto; //центрую
+  height: 460px; //на главном окне фиксир. высота с картинкой, без текста, а на  других на этот фон наслаиваются
+  padding: 0;
+  margin-top: -65px; // видно сквозь закрытое меню
+  background: url("../../img/bg-back-mobile@1x.jpg") no-repeat 50% 0;
+  background-size: cover;
+  color: @white;
+}
+
+.content-header__intro {
+  display: block;
+  margin-right: auto;
+  margin-top: auto;
+}
+
+.content-header__title {
+  margin: 100px 20px 0 20px;
+  padding: 0;
+
+  text-align: center;
+  font-size: 24px;
+  font-weight: lighter;
+  line-height: normal;
+}
