@@ -5,10 +5,9 @@ body {
 
   font-size: 14px;
   line-height: 24px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   color: @black;
-
   background-color: @white;
 }
 
@@ -17,28 +16,30 @@ img {
   height: auto;
 }
 
-.visibility-hidden {
-  display: none;
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
-input[type="text"],
-input[type="tel"],
-input[type="email"],
-textarea {
-  width: 250px;
-  min-height: 30px;
-  padding: 15px;
-
-  border: 1px solid @grey;
-
-  font-size: 18px;
-  line-height: 30px;
+fieldset {
+  border: none;
+  padding: 40px 0;
 }
 
-input:hover {
-  border: 1px solid @black;
-}
-
-input:focus {
-  border: 1px solid @pink;
+@media (min-width: @tablet-width) {
+  fieldset {
+    border: 2px solid @light-grey;
+    padding: 40px 58px;
+  }
 }

@@ -1,12 +1,13 @@
 .main-nav {
-  width: 320px; //фиксированная сетка
-  margin: 0 auto; //фиксированная сетка
+  width: 100%;
   background-color: @dark-blue;
+  display: flex;
+  flex-direction: column;
   z-index: 2;
 }
 
 .main-nav__header {
-  height: 70px;   // по умолчанию пишется для открытого состояния, высота с логотипом больше высоты пунктов меню
+  height: 69px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,12 +27,16 @@
   background-size: 25px 25px;
 }
 
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
 .main-nav--closed {
   background-color: fade(@black, 30%); // прозрачный черный?..
 
   .main-nav__header {
     border-bottom: none;
-    height: 65px; // высота выравнивается
+    height: 65px;
   }
 
   .main-nav__toggle {
@@ -52,8 +57,7 @@
 
 .main-nav__item {
   width: 100%;
-  height: 65px;
-  padding: 4px 0;
+  height: 62px;
   display: flex;
   justify-content: center;
 
@@ -66,6 +70,10 @@
   text-transform: uppercase;
 }
 
+.main-nav__item--active {
+  text-decoration: underline;
+}
+
 .main-nav__item a {
   color: @white;
   text-decoration: none;
@@ -75,14 +83,64 @@
   color: @pink;
 }
 
-.main-nav__item--active {
-  text-decoration: underline;
-}
-
 .main-nav__item a:active {
   color: fade(@white, 30%);
 }
 
-.main-nav--closed .main-nav__list {
-  display: none;
+@media (min-width: @tablet-width) {
+  .main-nav__header {
+    height: 110px;
+  }
+
+  .main-nav--closed {
+    .main-nav__header {
+      height: 110px;
+    }
+  }
+}
+
+@media (max-width: @not-desktop-width) {
+  .main-nav--closed .main-nav__list {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    width: 100%;
+    margin: 0;
+    background-color: fade(@black, 30%);
+  }
+
+  .main-nav__wrapper {
+    width: calc(@desktop-width - 260px);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 130px;
+  }
+
+  .main-nav__header {
+    border: none;
+    padding: 0;
+    justify-content: flex-start;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .main-nav__item {
+    width: auto;
+    border: none;
+    justify-content: flex-start;
+    margin-left: 80px;
+  }
 }

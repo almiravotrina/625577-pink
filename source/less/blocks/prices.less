@@ -19,30 +19,63 @@
 }
 */
 
-.prices__list {
-  margin: 0;
+.prices__container {
+  display: flex;
+  flex-direction: column;
   padding: 0;
-  margin-top: 90px;
-  list-style: none;
-  overflow-x: hidden;
+  margin: 0 20px;
 }
 
-.prices__item {
+.prices__header {
   width: 280px;
-  border-left: 1px solid @light-grey;
-  background-color: @white;
+  display: flex;
+  flex-direction: row;
 }
+
+.prices__services {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid @light-grey;
+}
+
+.prices__service {
+  width: 280px;
+  min-height: 60px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid @light-grey;
+  background-color: @white;
+
+  &:first-child {
+    border-left: 1px solid @light-grey;
+    border-right: none;
+  }
+}
+
+.prices__service--active {
+  width: 140px;
+}
+
 
 .prices__tariff {
   width: 100%;
   height: 100px;
+  flex-shrink: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: @dark-blue;
+  border-left: 1px solid @light-grey;
   color: @white;
   text-transform: uppercase;
   text-align: center;
+}
+
+.prices__tariff--invisible {
+  visibility: hidden;
+  background-color: @light-grey;
 }
 
 .prices__name {
@@ -59,28 +92,60 @@
   line-height: 30px;
 }
 
-.prices__table {
-  padding: 0;
-  list-style: none;
-}
-
-.prices__services {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid @grey;
-}
-
-.prices__service {
-  margin-left: 15px;
-  font-size: 14px;
-  line-height: 30px;
-  text-transform: uppercase;
-}
-
 .prices__image {
-  width: 30px;
-  height: 30px;
-  margin-right: 15px;
-  background-color: @white;
+  display: block;
+  margin: auto;
+}
+
+@media (min-width: @tablet-width) {
+  .prices {
+    width: @tablet-width;
+  }
+
+  .prices__container {
+    width: 620px;
+    margin-bottom: 65px;
+    margin-top: 90px;
+  }
+
+  .prices__tariff {
+    width: 154px;
+    height: 80px;
+  }
+
+  .prices__service {
+    width: 154px;
+    min-height: 55px;
+    flex-shrink: 0;
+    border-right: 1px solid @light-grey;
+
+    &:first-child {
+      border-left: none;
+      border-right: 1px solid @light-grey;
+    }
+  }
+
+  .prices__toggles {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .prices {
+    width: @desktop-width;
+  }
+
+  .prices__container {
+    margin: 150px 130px 100px 130px;
+    width: 940px;
+  }
+
+  .prices__tariff {
+    width: 234px;
+    height: 100px;
+  }
+
+  .prices__service {
+    width: 234px;
+  }
 }

@@ -1,7 +1,19 @@
 .page-main {
-  width: 100%;
-  margin: 0;
+  width: @mobile-width;
+  margin: 0 auto;
   padding: 0;
   display: flex;
   flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .page-main {
+    width: @tablet-width;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main {
+    width: @desktop-width;
+  }
 }
