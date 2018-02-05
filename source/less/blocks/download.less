@@ -1,9 +1,8 @@
 .download {
   min-height: 270px;
-  width: 320px; //фиксированная сетка
+  width: 100%; //фиксированная сетка
   margin: 0 auto; //фиксированная сетка
   padding: 0;
-
   background-color: @dark-blue;
   color: @white;
   text-align: center;
@@ -18,7 +17,7 @@
 }
 
 .download__logos {
-  margin: 0 30px; // по 3 в ряд( при увеличении контента)
+  margin: 0 20px; // по 3 в ряд( при увеличении контента)
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -30,9 +29,61 @@
 }
 
 .download__logo {
-  margin: 0 5px;
+  margin: 0 15px;
 }
 
 .download__text {
   font-weight: 100;
+  margin: 20px 0 30px 0;
+}
+
+
+@media (min-width: @tablet-width) {
+  .download {
+    width: 300px;
+    background-color: transparent;
+    margin-top: -355px;
+    margin-left: 20px;
+    min-height: 355px;
+  }
+
+  .download__wrapper {
+    padding: 0 auto;
+  }
+
+  .download__button {
+    margin-top: 0;
+    margin-bottom: 45px;
+    width: 294px;
+  }
+
+  .download__text {
+    font-size: 18px;
+    margin: 30px 0 0 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .download {
+    width: 300px;
+    background-color: transparent;
+    margin-top: -405px;
+    margin-left: 130px;
+    min-height: 405px;
+  }
+
+  .download__wrapper {
+    padding: 0 auto;
+  }
+
+  .download__button {
+    margin-top: 0;
+    font-size: 21px;
+    margin-bottom: 65px;
+    width: 294px;
+  }
+
+  .download__text {
+    margin: 50px 0 0 0;
+  }
 }

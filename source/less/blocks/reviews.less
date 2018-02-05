@@ -14,6 +14,8 @@
 .reviews__item {
   margin: 0;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .reviews__author-name {
@@ -28,4 +30,155 @@
   padding: 0;
   margin: 0;
   line-height: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews {
+    width: @tablet-width;
+    margin-top: -60px;
+  }
+
+  .reviews__header {
+    display: flex;
+    flex-direction: row;
+    min-height: 400px;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .reviews_img {
+    flex-shrink: 0;
+    border: 1px solid red;
+    width: 240px; // временно пока нет изображения часов
+    height: 280px; // временно пока нет изображения часов
+    margin-right: 70px;
+  }
+
+  .reviews_promo {
+    padding-top: 40px;
+  }
+
+  .reviews__link {
+    color: @pink;
+  }
+
+  .reviews__title {
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .reviews__item {
+    flex-direction: column-reverse;
+  }
+
+  .reviews__author-name {
+    font-size: 20px;
+
+    p {
+      padding: 0;
+      margin: 0;
+      font-size: 14px;
+      font-weight: normal;
+    }
+  }
+
+  .reviews__text {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews {
+    width: @desktop-width;
+    margin-top: 0;
+  }
+
+  .reviews__header {
+    background-color: @light-grey;
+    padding: 0 130px;
+    min-height: 480px;
+  }
+
+  .reviews_img {
+    width: 300px; // временно пока нет изображения часов
+    height: 350px; // временно пока нет изображения часов
+  }
+
+  .reviews__title {
+    br {
+      display: none;
+    }
+  }
+
+  .reviews__info,
+  .reviews__link {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .reviews__wrapper {
+    margin-top: 140px;
+  }
+
+  .reviews__author-name {
+    font-size: 24px;
+
+    p {
+      padding: 0;
+      margin: 0;
+      font-size: 18px;
+      font-weight: normal;
+    }
+  }
+
+  .reviews__prev {
+    order: -1;
+    width: 40px;
+    height: 60px;
+    cursor: pointer;
+    border: none;
+    background-color: inherit;
+    margin-right: 100px;
+
+    &:hover {
+      polyline {
+        stroke: @dark-grey;
+      }
+    }
+
+    &:active {
+      polyline {
+        stroke: @light-grey;
+      }
+    }
+  }
+
+  .reviews__next {
+    width: 40px;
+    height: 60px;
+    cursor: pointer;
+    border: none;
+    background-color: inherit;
+    margin-left: 100px;
+
+    &:hover {
+      polyline {
+        stroke: @dark-grey;
+      }
+    }
+
+    &:active {
+      polyline {
+        stroke: @light-grey;
+      }
+    }
+  }
+
+  .reviews__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

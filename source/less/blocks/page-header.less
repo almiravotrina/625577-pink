@@ -1,5 +1,20 @@
 .page-header {
+  width: @mobile-width;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   color: @white;
+  background-color: @dark-blue;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    width: @tablet-width;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    width: @desktop-width;
+  }
 }

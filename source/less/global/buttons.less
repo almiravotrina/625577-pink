@@ -1,11 +1,11 @@
 .button {
-  min-width: 254px;
+  min-width: 280px;
+  height: 50px;
   display: inline-block;
   border: 3px solid @white;
   border-radius: 25px;
-
-  padding: 15px;
   font-size: 18px;
+  line-height: 50px;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
@@ -133,4 +133,33 @@
 
 .button-editor--contrast {
   background-image: url("../../img/icon-editor-contrast.svg");
+}
+
+@media (min-width: @tablet-width) {
+  .button-editor {
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+  }
+
+  .button--margin {
+    margin: 10px 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .button-editor {
+    width: 45px;
+    height: 45px;
+    margin: 0;
+    background-size: 45px 45px;
+  }
+
+  .button--margin {
+    margin: 0;
+  }
+
+  .button {
+    min-width: 190px;
+  }
 }
