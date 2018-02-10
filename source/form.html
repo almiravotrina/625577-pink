@@ -36,13 +36,13 @@
     <main class="page-main">
       <section class="content-header">
         <div class="content-header__wrapper">
-          <h2 class="content-header__title">Конкурс на самое <br> безбашенное <br> путешествие с ПИНК</h2>
+          <h2 class="content-header__title">Конкурс на самое безбашенное <br> путешествие с Пинк</h2>
         </div>
       </section>
       <section class="user-form">
         <div class="user-form__wrapper">
           <p class="user-form__slogan">
-            Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
+            Поделитесь своей историей и получите шанс выиграть ценный приз &#8212; 1000 миль на вашу бонусную карту!
             <span>Пожалуйста, заполните форму ниже:</span>
           </p>
           <form class="user-form__form" action="https://echo.htmlacademy.ru" method="post">
@@ -95,6 +95,7 @@
             </div>
             <fieldset class="user-form__contacts fieldset">
               <legend class="user-form__legend">Контактная информация</legend>
+              <div class="user-form__contacts-wrapper">
               <div class="user-form__item">
                 <label class="user-form__label" for="tel">Номер телефона</label>
                 <input class="user-form__input" type="tel" name="tel" id = "tel" placeholder="Номер, пожалуйста">
@@ -102,6 +103,7 @@
               <div class="user-form__item">
                 <label class="user-form__label" for="email">Адрес почты</label>
                 <input class="user-form__input" type="email" name="email" id="email" placeholder="Введите почту *" required>
+              </div>
               </div>
             </fieldset>
             <div class="user-form__application-container" >
@@ -116,11 +118,11 @@
                   </label>
                   <label>
                     <input type='radio' name='application' value='pink-android'>
-                    Pink для Android
+                    Pink на Android
                   </label>
                   <label>
                     <input type='radio' name='application' value='pink-phone'>
-                    Pink для Phone
+                    Windows Phone
                   </label>
                 </div>
               </fieldset>
@@ -134,7 +136,7 @@
             <div class="user-form__item">
               <button class="user-form__button button button--form" type="submit">Отправить форму</button>
               <p class="user-form__tip">
-                <span>*</span> - обязательные поля
+                * &#8212; обязательные <span>для заполнения</span> поля
               </p>
             </div>
           </form>

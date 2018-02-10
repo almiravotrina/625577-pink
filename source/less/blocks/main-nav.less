@@ -16,8 +16,9 @@
 }
 
 .main-nav__toggle {
-  width: 50px;
-  height: 50px;
+  width: 25px;
+  height: 25px;
+  margin-top: -5px;
   cursor: pointer;
   border: none;
   background-color: inherit;
@@ -88,6 +89,14 @@
 }
 
 @media (min-width: @tablet-width) {
+  .main-nav__item {
+    line-height: 60px;
+  }
+
+  .main-nav__toggle {
+    margin-top: 0;
+  }
+
   .main-nav__header {
     height: 110px;
   }
@@ -142,5 +151,7 @@
     border: none;
     justify-content: flex-start;
     margin-left: 80px;
+    font-weight: normal;
+    text-transform: none;
   }
 }
