@@ -1,7 +1,7 @@
 .user-form {
   width: 100%;
   padding: 0;
-  margin-top: -185px; //залезает на предыдущий блок
+  margin-top: -225px; //залезает на предыдущий блок
   background-color: @white;
 }
 
@@ -32,7 +32,7 @@
 }
 
 .user-form__slogan {
-  margin: 40px 20px 15px 20px;
+  margin: 35px 20px 20px 20px;
   padding-top: 10px;
   line-height: 30px;
   text-align: center;
@@ -54,7 +54,7 @@
 .user-form__contacts {
   display: flex;
   flex-direction: column;
-  margin: 20px 20px 40px 20px;
+  margin: 15px 20px 40px 20px;
 }
 
 .user-form__achievement-container,
@@ -67,11 +67,12 @@
   display: flex;
   flex-direction: column;
   padding: 20px 20px 0 20px;
-  margin: 40px 0;
+  margin: 38px 0;
 
   .user-form__input {
-    width: calc(@mobile-width - 2 * 20px - 2 * 2px - 2 * 15px);
-    min-height: 200px;
+    width: 240px;
+    min-height: 170px;
+    padding: 10px 20px;
   }
 }
 
@@ -86,14 +87,14 @@
   text-transform: uppercase;
   color: @pink;
   margin: 0;
-  padding: 15px 20px 5px 20px;
+  padding: 16px 20px 5px 22px;
 }
 
 .user-form__input {
   margin: 0;
-  width: 246px;
+  width: 236px;
   min-height: 30px;
-  padding: 15px;
+  padding: 15px 20px;
   flex-grow: 1;
   border: 2px solid @grey;
   border-radius: 5px;
@@ -115,6 +116,7 @@
 }
 
 .user-form__legend {
+  width: 100%;
   line-height: 18px;
   text-transform: uppercase;
   color: @pink;
@@ -139,12 +141,11 @@
     }
   }
 
-  input[type="checkbox"],
-  input[type="radio"] {
+  input[type="checkbox"] {
     width: 38px;
     height: 38px;
     margin: 0;
-    margin-right: 15px;
+    margin-right: 27px;
     vertical-align: middle;
   }
 }
@@ -167,33 +168,32 @@
     }
   }
 
-  input[type="checkbox"],
   input[type="radio"] {
     width: 38px;
     height: 38px;
     margin: 0;
-    margin-right: 15px;
+    margin-right: 27px;
     vertical-align: middle;
   }
 }
 
 .user-form__button {
-  margin: 15px 20px;
+  margin: 12px 20px;
 }
 
 .user-form__tip {
-  margin: 25px 0 15px 0;
+  margin: 28px 0 15px 0;
   text-transform: uppercase;
   text-align: center;
 
   span {
-    color: @pink;
+    display: none;
   }
 }
 
 @media (min-width: @tablet-width) {
   .user-form {
-    margin-top: -285px;
+    margin-top: -290px;
   }
 
   .user-form__wrapper {
@@ -219,23 +219,32 @@
     padding-top: 35px;
     padding-bottom: 20px;
 
-    .user-form__achievement {
-      margin: 0;
-    }
-
     br {
       display: none;
     }
+  }
 
-    .user-form__checkbox-area {
-      margin-top: 5px;
-      margin-bottom: 10px;
-    }
+  .user-form__achievement {
+    margin: 0;
   }
 
   .user-form__label {
     padding-left: 0;
   }
+
+  .user-form__checkbox-area {
+    margin-top: 5px;
+    margin-bottom: 10px;
+
+    label:last-child {
+      margin-bottom: 20px;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 16px;
+    }
+  }
+
 
   .user-form__form {
     display: flex;
@@ -254,11 +263,22 @@
   .user-form__contacts {
     order: -1;
     margin: 20px;
+    margin-top: 26px;
 
     .user-form__item {
       flex-direction: column-reverse;
-      align-items: center;
+      align-items: flex-start;
       margin: 0;
+      margin-bottom: 25px;
+    }
+
+    .user-form__item:last-child {
+      margin-bottom: 0;
+    }
+
+    .user-form__label {
+      padding-left: 19px;
+      padding-top: 9px;
     }
 
     .user-form__input {
@@ -271,24 +291,32 @@
     padding: 0;
     margin: 30px 20px;
     background-color: @white;
+  }
 
-    .user-form__application {
-      margin: 0;
+  .user-form__application {
+    margin: 0;
+  }
+
+  .user-form__radio-area {
+    margin-top: 5px;
+    margin-bottom: 15px;
+
+    label:last-child {
+      margin-bottom: 20px;
     }
 
-    .user-form__radio-area {
-      margin-top: 5px;
-      margin-bottom: 15px;
+    input[type="radio"] {
+      margin-right: 16px;
     }
   }
 
   .user-form__description {
-    padding: 40px 60px 50px 60px;
-    margin: 40px 20px;
+    padding: 33px 60px 50px 60px;
+    margin: 40px 20px 45px 20px;
 
     .user-form__input {
-      width: calc(@tablet-width - 2 * 80px - 2 * 2px - 2 * 15px);
-      min-height: 160px;
+      width: calc(@tablet-width - 2 * 80px - 2 * 2px - 2 * 20px - 2 * 2px);
+      min-height: 170px;
     }
   }
 
@@ -300,17 +328,18 @@
   .user-form__tip {
     margin-left: auto;
     margin-right: 20px;
+    margin-top: 40px;
   }
 
   .user-form__form > .user-form__item:last-of-type {
-    margin-bottom: 35px;
+    margin-bottom: 47px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .user-form {
     width: 100%;
-    margin-top: -240px;
+    margin-top: -460px;
   }
 
   .user-form__wrapper {
@@ -320,7 +349,8 @@
   }
 
   .user-form__slogan {
-    margin: 90px 70px;
+    margin: 92px;
+    margin-bottom: 60px;
     padding: 0;
   }
 
@@ -335,29 +365,43 @@
     width: 435px;
     flex-shrink: 0;
     padding: 0;
-    padding-top: 25px;
+    padding-top: 22px;
+  }
+
+  .user-form__item {
+    margin-bottom: 52px;
   }
 
   .user-form__application-container {
-    width: 435px;
+    width: 438px;
     flex-shrink: 0;
     padding: 0;
     margin: 0;
+    margin-top: 10px;
 
     .user-form__radio-area {
-      margin-top: 0;
+      margin-top: 8px;
       margin-bottom: 15px;
+      margin-left: 20px;
     }
   }
 
   .user-form__contacts {
     width: 940px;
-    margin: 30px 0;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    margin: 0;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+
+    .user-form__contacts-wrapper {
+      width: 820px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
 
     .user-form__item {
+      flex-basis: 375px;
       width: 375px;
       margin: 0;
       align-items: flex-start;
@@ -388,13 +432,12 @@
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 0;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
 
     label {
       width: max-content;
       margin: 0;
-      margin-right: 30px;
-      margin-bottom: 40px;
+      margin-bottom: 45px;
     }
 
     label:nth-child(2n) {
@@ -415,10 +458,11 @@
     width: 940px;
     margin-left: 0;
     margin-right: 0;
+    padding: 37px 60px 45px 60px;
 
     .user-form__input {
-      width: 746px;
-      min-height: 95px;
+      width: 775px;
+      min-height: 100px;
     }
   }
 
@@ -429,6 +473,12 @@
 
   .user-form__tip {
     margin-right: 0;
+    margin-bottom: 0;
+    margin-top: 5px;
+
+    span {
+      display: inline;
+    }
   }
 
   .user-form__form > .user-form__item:last-of-type {

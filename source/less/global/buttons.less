@@ -40,6 +40,10 @@
   margin: 5px 0;
 }
 
+.button--photo {
+  height: 55px;
+}
+
 .button--pink {
   border: 3px solid @pink;
   color: @pink;
@@ -87,7 +91,7 @@
 
 .button--form {
   width: 280px;
-  height: 60px;
+  height: 63px;
   background-color: @green;
   border: none;
   border-radius: 2px;
@@ -133,9 +137,14 @@
 
 .button-editor--contrast {
   background-image: url("../../img/icon-editor-contrast.svg");
+  background-size: 38px 38px;
 }
 
 @media (min-width: @tablet-width) {
+  .button {
+    min-width: 260px;
+  }
+
   .button-editor {
     width: 30px;
     height: 30px;
@@ -143,7 +152,8 @@
   }
 
   .button--margin {
-    margin: 10px 0;
+    margin: 14px 0;
+    margin-left: 10px;
   }
 }
 
@@ -160,6 +170,6 @@
   }
 
   .button {
-    min-width: 190px;
+    min-width: 180px;
   }
 }

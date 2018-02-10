@@ -18,13 +18,14 @@
 .editor__tools {
   display: flex;
   flex-direction: column;
-  margin: 20px;
+  margin: 10px 20px;
   justify-content: center;
   flex-wrap: wrap;
 }
 
 .editor__tool {
   display: flex;
+  margin: 0 13px;
   flex-direction: column;
   align-items: flex-start;
   flex-wrap: wrap;
@@ -33,6 +34,7 @@
 .editor__range {
   margin: 20px 0 0 0;
   width: 240px;
+  z-index: 1;
 }
 
 @media (max-width: @mobile-only-width) {
@@ -50,14 +52,15 @@
 
   .editor__range--hidden {
     visibility: hidden;
+    z-index: 0;
   }
 }
 
 .editor__buttons-group {
   width: 100%;
-  margin-top: 20px;
+  margin-top: 26px;
   padding-top: 30px;
-  padding-bottom: 10px;
+  padding-bottom: 35px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -72,7 +75,7 @@
 
   .editor__wrapper {
     flex-direction: row;
-    padding: 55px 20px 30px 20px;
+    padding: 45px 20px 42px 20px;
     justify-content: space-between;
   }
 
@@ -82,6 +85,7 @@
     border: 1px solid red; //временно
     flex-shrink: 0;
     margin: 0;
+    margin-top: 15px;
   }
 
   .editor__tools {
@@ -103,7 +107,8 @@
   .editor__buttons-group {
     width: 300px;
     border: none;
-    margin-top: 30px;
+    margin-top: 50px;
+    padding: 0;
     display: flex;
     flex-direction: column;
   }
@@ -112,13 +117,20 @@
 @media (min-width: @desktop-width) {
   .editor {
     width: calc(@desktop-width - 260px);
-    margin: 0 130px;
+    margin: 0 130px 25px 130px;
   }
 
   .editor__wrapper {
-    flex-direction: row;
-    padding: 60px 80px;
-    justify-content: space-between;
+    padding: 40px 55px 58px 80px;
+  }
+
+  .editor__tools {
+    width: 415px;
+  }
+
+  .editor__tool {
+    padding: 13px 0;
+    margin: 0;
   }
 
   .editor__range {
@@ -127,6 +139,7 @@
   }
 
   .editor__buttons-group {
+    margin-top: auto;
     width: 410px;
     flex-direction: row;
     justify-content: space-between;

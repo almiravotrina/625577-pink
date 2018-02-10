@@ -1,10 +1,12 @@
 .prices {
   width: 320px;
   margin: 0 auto;
+  margin-top: 23px;
   overflow-x: hidden;
   padding: 0;
+  padding-top: 91px;
+  padding-bottom: 49px;
   background-color: @light-grey;
-  z-index: 2;//чтобы лечь на  карту футера
 }
 /*
 .prices::before {
@@ -47,6 +49,11 @@
   align-items: center;
   border-right: 1px solid @light-grey;
   background-color: @white;
+  text-transform: uppercase;
+
+  span {
+    margin-left: 25px;
+  }
 
   &:first-child {
     border-left: 1px solid @light-grey;
@@ -61,7 +68,7 @@
 
 .prices__tariff {
   width: 100%;
-  height: 100px;
+  height: 97px;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
@@ -94,18 +101,22 @@
 
 .prices__image {
   display: block;
-  margin: auto;
+  margin-left: auto;
+  margin-right: 25px;
 }
 
 @media (min-width: @tablet-width) {
   .prices {
     width: @tablet-width;
+    margin-top: 0;
+    padding: 0;
+    padding-bottom: 6px;
   }
 
   .prices__container {
     width: 620px;
     margin-bottom: 65px;
-    margin-top: 90px;
+    margin-top: 85px;
   }
 
   .prices__tariff {
@@ -113,16 +124,44 @@
     height: 80px;
   }
 
+  .prices__services {
+    height: 45px;
+  }
+
+  .prices__name {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+
+  .prices__cost {
+    font-size: 18px;
+  }
+
   .prices__service {
     width: 154px;
-    min-height: 55px;
+    min-height: 45px;
     flex-shrink: 0;
     border-right: 1px solid @light-grey;
+    justify-content: flex-start;
+    text-transform: none;
+
+    p {
+      margin: 0;
+      margin-left: 15px;
+    }
+
+    span {
+      display: none;
+    }
 
     &:first-child {
       border-left: none;
       border-right: 1px solid @light-grey;
     }
+  }
+
+  .prices__image {
+    margin-right: auto;
   }
 
   .prices__toggles {
@@ -133,6 +172,8 @@
 @media (min-width: @desktop-width) {
   .prices {
     width: @desktop-width;
+    padding-top: 4px;
+    padding-bottom: 0;
   }
 
   .prices__container {
@@ -140,12 +181,38 @@
     width: 940px;
   }
 
+  .prices__header {
+    width: 940px;
+  }
+
+  .prices__services {
+    height: 58px;
+  }
+
+  .prices__service {
+    width: 234px;
+    font-size: 18px;
+    line-height: 30px;
+
+    p {
+      margin-left: 22px;
+    }
+  }
+
   .prices__tariff {
     width: 234px;
     height: 100px;
   }
 
-  .prices__service {
-    width: 234px;
+  .prices__name {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0;
+  }
+
+  .prices__cost {
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
   }
 }
