@@ -25,6 +25,20 @@
 
   font-weight: 100;
   color: @pink;
+
+  .contacts__mail {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+      color: @dark-blue;
+      text-decoration: underline;
+    }
+
+    &:active {
+      color: fade(@dark-blue, 30%);
+    }
+  }
 }
 
 .contacts__label {

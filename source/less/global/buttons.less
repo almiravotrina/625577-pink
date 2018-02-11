@@ -1,6 +1,5 @@
 .button {
   min-width: 280px;
-//  height: 50px;
   display: inline-block;
   border: 3px solid @white;
   border-radius: 25px;
@@ -38,10 +37,6 @@
 
 .button--margin {
   margin: 5px 0;
-}
-
-.button--photo {
-//  height: 55px;
 }
 
 .button--pink {
@@ -121,24 +116,18 @@
   margin: 0 15px;
 
   border: none;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: 45px 45px;
+  fill: @grey;
   background-color: inherit;
+
+  &:hover {
+    fill: @dark-grey;
+  }
+
+  &--active {
+    fill: @pink;
+  }
 }
 
-.button-editor--crop {
-  background-image: url("../../img/icon-editor-crop.svg");
-}
-
-.button-editor--fill {
-  background-image: url("../../img/icon-editor-fill.svg");
-}
-
-.button-editor--contrast {
-  background-image: url("../../img/icon-editor-contrast.svg");
-  background-size: 38px 38px;
-}
 
 @media (min-width: @tablet-width) {
   .button {
