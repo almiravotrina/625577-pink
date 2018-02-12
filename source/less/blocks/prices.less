@@ -14,7 +14,7 @@
   width: 100%;
   height: 30px;
   content: "";
-  background: url("../../img/bg-triangle-white.svg") no-repeat 50% 50%;
+  background: url("../img/bg-triangle-white.svg") no-repeat 50% 50%;
   background-size: contain;
   top: 0;
   left: 0;
@@ -80,6 +80,34 @@
   text-align: center;
 }
 
+.prices__tarif--hit {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 74px;
+    height: 73px;
+    top: 0;
+    left: 0;
+    background-image: url("../img/bg-hit.svg");
+    background-repeat: no-repeat;
+    background-size: 74px 73px;
+  }
+
+  &::after {
+    content: "ХИТ";
+    position: absolute;
+    width: 74px;
+    height: 73px;
+    top: 6px;
+    left: 6px;
+    transform: rotate(-45deg);
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+
 .prices__tariff--invisible {
   visibility: hidden;
   background-color: @light-grey;
@@ -110,18 +138,30 @@
     width: @tablet-width;
     margin-top: 0;
     padding: 0;
-    padding-bottom: 6px;
+    padding-bottom: 2px;
   }
 
   .prices__container {
     width: 620px;
     margin-bottom: 65px;
-    margin-top: 85px;
+    margin-top: 87px;
   }
 
   .prices__tariff {
     width: 154px;
     height: 80px;
+  }
+
+  .prices__tarif--hit {
+    &::before {
+      background-image: url("../img/bg-hit-tablet.svg");
+      background-size: 61px 61px;
+    }
+
+    &::after {
+      top: 0;
+      left: 0;
+    }
   }
 
   .prices__services {
@@ -172,7 +212,7 @@
 @media (min-width: @desktop-width) {
   .prices {
     width: @desktop-width;
-    padding-top: 4px;
+    padding-top: 0;
     padding-bottom: 0;
   }
 
@@ -202,6 +242,18 @@
   .prices__tariff {
     width: 234px;
     height: 100px;
+  }
+
+  .prices__tarif--hit {
+    &::before {
+      background-image: url("../img/bg-hit.svg");
+      background-size: 73px 74px;
+    }
+
+    &::after {
+      top: 6px;
+      left: 6px;
+    }
   }
 
   .prices__name {

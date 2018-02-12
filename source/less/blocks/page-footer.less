@@ -56,6 +56,23 @@
   height: 60px;
 }
 
+.page-footer__logo {
+  fill: @dark-blue;
+
+  &:hover {
+    fill: @pink;
+  }
+
+  &:active {
+    fill: @dark-blue;
+    opacity: 0.3;
+  }
+}
+
+.page-footer__logo--desktop {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .page-footer__wrapper {
     width: @tablet-width;
@@ -96,5 +113,13 @@
 
   .page-footer__item {
     margin-left: 15px;
+  }
+
+  .page-footer__logo {
+    display: none;
+  }
+
+  .page-footer__logo--desktop {
+    display: inline;
   }
 }

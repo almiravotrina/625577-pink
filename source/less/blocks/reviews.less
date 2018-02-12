@@ -2,7 +2,7 @@
   width: 320px; //фиксированная сетка
   margin: 0 auto;
   padding: 0;
-  margin-top: -40px;//наезжает на картинку с телефоном
+  margin-top: -44px;//наезжает на картинку с телефоном
   margin-bottom: 20px;
   z-index: 2;//чтобы лечь на телефон в преимуществах
   background-color: @white;
@@ -37,7 +37,7 @@
 @media (min-width: @tablet-width) {
   .reviews {
     width: @tablet-width;
-    margin-top: -60px;
+    margin-top: 0;
   }
 
   .reviews__header {
@@ -50,11 +50,21 @@
   }
 
   .reviews_img {
+    position: relative;
     flex-shrink: 0;
-    border: 1px solid red;
-    width: 240px; // временно пока нет изображения часов
-    height: 280px; // временно пока нет изображения часов
+    width: 240px;
+    height: 280px;
     margin-right: 66px;
+
+    &::before {
+      position: absolute;
+      content: "24";
+      top: 50%;
+      left: 25%;
+      font-size: 96px;
+      font-weight: bold;
+      color: @pink;
+    }
   }
 
   .reviews_promo {
@@ -114,9 +124,14 @@
   }
 
   .reviews_img {
-    width: 300px; // временно пока нет изображения часов
-    height: 350px; // временно пока нет изображения часов
+    width: 300px;
+    height: 350px;
     margin-right: 64px;
+
+    &::before {
+      left: 27%;
+      font-size: 116px;
+    }
   }
 
 
@@ -153,6 +168,10 @@
   .reviews__wrapper {
     padding-top: 150px;
     padding-bottom: 20px;
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 30px;
+    background-size: 79px 64px;
   }
 
   .reviews__author-name {
@@ -177,17 +196,14 @@
     margin-right: 95px;
     margin-left: 5px;
     margin-top: 20px;
+    fill: @grey;
 
     &:hover {
-      polyline {
-        stroke: @dark-grey;
-      }
+      fill: @dark-grey;
     }
 
     &:active {
-      polyline {
-        stroke: @light-grey;
-      }
+      fill: @light-grey;
     }
   }
 
@@ -200,16 +216,15 @@
     margin-left: 95px;
     margin-right: 5px;
     margin-top: 20px;
+    fill: @grey;
 
     &:hover {
-      polyline {
-        stroke: @dark-grey;
-      }
+      fill: @dark-grey;
     }
 
     &:active {
       polyline {
-        stroke: @light-grey;
+        fill: @light-grey;
       }
     }
   }

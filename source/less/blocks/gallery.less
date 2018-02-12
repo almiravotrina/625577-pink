@@ -31,6 +31,29 @@
   align-items: center;
 }
 
+.gallery__main-photo {
+  position: relative;
+  box-sizing: border-box;
+
+  &::after {
+    content: "Панорама дня";
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 140px;
+    height: 36px;
+    font-size: 12px;
+    line-height: 36px;
+    font-weight: bold;
+    color: @white;
+    background-image: url("../img/bg-rect.svg");
+    background-repeat: no-repeat;
+    background-size: 140px 36px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
 .gallery__image {
   display: block;
 }
@@ -56,8 +79,9 @@
 }
 
 .gallery__author {
-  padding: 10px 0 0 15px;
+  padding-top: 10px;
   margin: 0;
+  padding-left: 19px;
   font-weight: bold;
   font-style: normal;
 
@@ -70,7 +94,7 @@
 
 .gallery__text {
   margin: 0;
-  margin-left: 15px;
+  padding-left: 17px;
 }
 
 .gallery__like {
@@ -102,6 +126,12 @@
     margin-bottom: 70px;
   }
 
+  .gallery__main-photo {
+    &::after {
+      top: 58px;
+    }
+  }
+
   .gallery__list {
     flex-direction: row;
     margin-top: 0;
@@ -121,13 +151,14 @@
   }
 
   .gallery__author {
-    padding: 23px 0 0 27px;
+    padding: 24px 0 0 30px;
   }
 
   .gallery__text {
     margin-left: 28px;
     margin-right: 10px;
     padding-bottom: 12px;
+    padding-left: 2px;
   }
 
   .gallery__like {
@@ -149,7 +180,7 @@
     padding-left: 15px;
     padding-bottom: 27px;
     margin: 0 20px;
-    margin-bottom: 45px;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -211,12 +242,19 @@
   }
 
   .gallery__slogan:last-of-type {
-    margin: 4px auto 70px auto;
+    margin: 8px auto 67px auto;
   }
 
   .gallery__image--full {
     width: @desktop-width;
     height: 505px;
+  }
+
+  .gallery__main-photo {
+    &::after {
+      top: 54px;
+      right: 130px;
+    }
   }
 
   .gallery__photos {
@@ -228,14 +266,23 @@
     }
 
     .gallery__item {
+      padding-bottom: 23px;
       margin-bottom: 50px;
       min-height: 535px;
+    }
+
+    .gallery__text {
+      padding: 0;
+    }
+
+    .gallery__author {
+      padding: 24px 0 0 28px;
     }
   }
 
   .gallery__item--promo {
     width: calc(@desktop-width - 2 * 130px - 2 * 25px);
-    margin: 0 130px 50px 130px;
+    margin: 0 130px 52px 130px;
     padding-right: 22px;
     padding-top: 22px;
     padding-left: 28px;

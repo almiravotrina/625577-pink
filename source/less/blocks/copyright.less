@@ -15,10 +15,15 @@
   width: 30px;
   height: 45px;
   font-size: 0;
-  background-image: url("../../img/htmlacademy.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 40px 50px;
+  fill: @pink;
+
+  &:hover {
+    fill: @dark-blue;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @desktop-width) {
