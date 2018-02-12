@@ -4,6 +4,9 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <link href="css/style.css" rel="stylesheet">
+      <link rel="preload" href="fonts/opensans.woff2" as="font">
+      <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+      <link rel="preload" href="fonts/opensanslight.woff2" as="font">
       <title>HTML Academy: Пинк</title>
   </head>
   <body>
@@ -145,11 +148,13 @@
     </header>
     <main class="page-main">
       <section class="content-header">
+        <h2 class="visually-hidden">Конкурс</h2>
         <div class="content-header__wrapper">
           <h2 class="content-header__title">Конкурс на самое безбашенное <br> путешествие с Пинк</h2>
         </div>
       </section>
       <section class="user-form">
+        <h2 class="visually-hidden">Форма для участия</h2>
         <div class="user-form__wrapper">
           <p class="user-form__slogan">
             Поделитесь своей историей и получите шанс выиграть ценный приз &#8212; 1000 миль на вашу бонусную карту!
@@ -157,6 +162,7 @@
           </p>
           <form class="user-form__form" action="https://echo.htmlacademy.ru" method="post">
             <section class="user-form__info">
+              <h2 class="visually-hidden">Личная информация</h2>
               <div class="user-form__item">
                 <label class="user-form__label" for="surname">Фамилия:</label>
                 <input class="user-form__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию *" required>
@@ -181,7 +187,7 @@
                     <label for="shark">Сделал селфи с акулой</label>
                   </div>
                   <div class="user-form__checkbox">
-                    <input type="checkbox" name="achievement" value="beach" id="beach"checked>
+                    <input type="checkbox" name="achievement" value="beach" id="beach" checked>
                     <label for="beach">Обгорел на пляже</label>
                   </div>
                   <div class="user-form__checkbox">

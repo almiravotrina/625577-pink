@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
-
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
@@ -162,6 +164,7 @@
     </header>
     <main class="page-main">
       <section class="content-header">
+        <h2 class="visually-hidden">Взгляните на жизнь иначе!</h2>
         <div class="content-header__wrapper content-header__wrapper--index">
           <h2 class="content-header__slogan mobile-hidden">Взгляните<br> на жизнь<br> иначе!
           </h2>
@@ -185,6 +188,7 @@
         </div>
       </section>
       <section class="information">
+        <h2 class="visually-hidden">Наши преимущества</h2>
         <div class="information__wrapper">
           <header class="information__header">
             <h2 class="information__slogan">Устали от серости мегаполиса?</h2>
@@ -213,14 +217,19 @@
             </ul>
             <div class="advantages__images">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone-screen-1-desktop@1x.webp 1x, img/iphone-screen-1-desktop@2x.webp 2x">
                 <img class="advantages__image desktop-only" src="./img/iphone-screen-1-desktop@1x.png"
                   srcset="./img/iphone-screen-1-desktop@2x.png 2x" height = "auto" alt="телефон">
               </picture>
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone-screen-2-desktop@1x.webp 1x, img/iphone-screen-2-desktop@2x.webp 2x">
                 <img class="advantages__image desktop-only" src="./img/iphone-screen-2-desktop@1x.png"
                   srcset="./img/iphone-screen-2-desktop@2x.png 2x" height = "auto" alt="телефон">
               </picture>
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.webp 1x, img/iphone-screen-3-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.webp 1x, img/iphone-screen-3-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/iphone-screen-mobile@1x.webp 1x, img/iphone-screen-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="./img/iphone-screen-3-desktop@1x.png, ./img/iphone-screen-3-desktop@2x.png 2x">
                 <source media="(min-width: 660px)" srcset="./img/iphone-screen-3-tablet@1x.png, ./img/iphone-screen-3-tablet@2x.png 2x">
                 <img class="advantages__image" src="./img/iphone-screen-mobile@1x.png"  srcset="./img/iphone-screen-mobile@2x.png 2x" alt="телефон">
@@ -230,9 +239,10 @@
         </div>
       </section>
       <section class="reviews">
+        <h2 class="visually-hidden">Отзывы</h2>
         <div class="reviews__header mobile-hidden">
-          <div class="reviews_img">
-          <img src="./img/icon-timer.svg">
+          <div class="reviews__img">
+          <img width ="240" height="280" src="./img/icon-timer.svg" alt="часики">
           </div>
           <div class="reviews_promo">
             <h2 class="reviews__title">Эффект<br> на 24 часа!</h2>
@@ -269,21 +279,22 @@
               </p>
             </blockquote>
             <button class="reviews__prev desktop-only" type="button">
-              <svg width="22" height="42"><use xlink:href="#icon-review-arrow-left"></svg>
+              <svg width="22" height="42"><use xlink:href="#icon-review-arrow-left"></use></svg>
 
             </button>
             <button class="reviews__next desktop-only" type="button">
-              <svg width="22" height="42"><use xlink:href="#icon-review-arrow-right"></svg>
+              <svg width="22" height="42"><use xlink:href="#icon-review-arrow-right"></use></svg>
             </button>
           </div>
           <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggle" type="button"></button>
+            <button class="slider__toggle slider__toggle--active" type="button"></button>
             <button class="slider__toggle" type="button"></button>
             <button class="slider__toggle" type="button"></button>
           </p>
         </div>
       </section>
       <section class="prices">
+        <h2 class="visually-hidden">Тарифы</h2>
         <div class="prices__wrapper slider">
           <ul class="prices__container slider__list">
             <li class="prices__header slider__row">
@@ -356,9 +367,8 @@
           </li>
           </ul>
             <p class="prices__toggles slider__toggles">
-              <button class="slider__toggle" type="button">
-              </button>
               <button class="slider__toggle" type="button"></button>
+              <button class="slider__toggle slider__toggle--active" type="button"></button>
               <button class="slider__toggle" type="button"></button>
             </p>
         </div>
@@ -379,7 +389,7 @@
             <span class="contacts__label">Приезжайте в гости:</span> ул. Большая <br> Конюшенная, 19/8
           </p>
         </div>
-        <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043705196!2d30.320889251977512!3d59.9387941817873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1518104388342"frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043705196!2d30.320889251977512!3d59.9387941817873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1518104388342" frameborder="0" style="border:0" allowfullscreen></iframe>
         <div class="page-footer__links mobile-hidden">
           <div class="page-footer__item">
             <a class="page-footer__link" href="index.html">

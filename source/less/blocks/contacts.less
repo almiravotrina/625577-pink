@@ -5,7 +5,7 @@
 
 .contacts__title {
   padding: 0;
-  margin: 45px 0;
+  margin: 41px 0;
   margin-bottom: 35px;
 
   font-size: 24px;
@@ -26,18 +26,22 @@
   font-weight: 100;
   color: @pink;
 
-  .contacts__mail {
-    text-decoration: none;
-    color: inherit;
+  &:last-child {
+    margin-bottom: 44px;
+  }
+}
 
-    &:hover {
-      color: @dark-blue;
-      text-decoration: underline;
-    }
+.contacts__mail {
+  text-decoration: none;
+  color: inherit;
 
-    &:active {
-      color: fade(@dark-blue, 30%);
-    }
+  &:hover {
+    color: @dark-blue;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: fade(@dark-blue, 30%);
   }
 }
 
@@ -87,11 +91,11 @@
     br {
       display: none;
     }
-  }
 
-  .contacts__text:last-child {
-    align-self: center;
-    margin-bottom: 0;
+    &:last-child {
+      align-self: center;
+      margin-bottom: 0;
+    }
   }
 
   .contacts__label {
