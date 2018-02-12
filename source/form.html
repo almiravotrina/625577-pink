@@ -175,45 +175,45 @@
                 <legend class="user-form__legend">
                   Ваши безбашенные<br> достижения в путешествии
                 </legend>
-                <div class='user-form__checkbox-area'>
-                  <label>
-                    <input type='checkbox' name="achievement" value='shark' checked>
-                    Сделал селфи с акулой
-                  </label>
-                  <label>
-                    <input type='checkbox' name="achievement" value='beach' checked>
-                    Обгорел на пляже
-                  </label>
-                  <label>
-                    <input type='checkbox' name="achievement" value='Norris'>
-                    Видел Чака Норриса
-                  </label>
-                  <label>
-                    <input type='checkbox' name="achievement" value='suvenirs'>
-                    Накупил сувениров
-                  </label>
-                  <label>
-                    <input type='checkbox' name="achievement" value='tower' checked>
-                    Удержал башню
-                  </label>
-                  <label>
-                    <input type='checkbox' name="achievement" value='hotel'>
-                    Разгромил отель
-                  </label>
+                <div class="user-form__checkbox-area">
+                  <div class="user-form__checkbox">
+                    <input type="checkbox" name="achievement" value="shark" id="shark" checked>
+                    <label for="shark">Сделал селфи с акулой</label>
+                  </div>
+                  <div class="user-form__checkbox">
+                    <input type="checkbox" name="achievement" value="beach" id="beach"checked>
+                    <label for="beach">Обгорел на пляже</label>
+                  </div>
+                  <div class="user-form__checkbox">
+                    <input type="checkbox" name="achievement" value="Norris" id="Norris">
+                    <label for="Norris">Видел Чака Норриса</label>
+                  </div>
+                  <div class="user-form__checkbox">
+                    <input type="checkbox" name="achievement" value="suvenirs" id="suvenirs">
+                    <label for="suvenirs">Накупил сувениров</label>
+                  </div>
+                  <div class="user-form__checkbox">
+                    <input type="checkbox" name="achievement" value="tower" id="tower" checked>
+                    <label for="tower">Удержал башню</label>
+                  </div>
+                  <div class="user-form__checkbox">
+                    <input type="checkbox" name="achievement" value="hotel" id="hotel">
+                    <label for="hotel">Разгромил отель</label>
+                  </div>
                 </div>
               </fieldset>
             </div>
             <fieldset class="user-form__contacts fieldset">
               <legend class="user-form__legend">Контактная информация</legend>
               <div class="user-form__contacts-wrapper">
-              <div class="user-form__item">
-                <label class="user-form__label" for="tel">Номер телефона</label>
-                <input class="user-form__input" type="tel" name="tel" id = "tel" placeholder="Номер, пожалуйста">
-              </div>
-              <div class="user-form__item">
-                <label class="user-form__label" for="email">Адрес почты</label>
-                <input class="user-form__input" type="email" name="email" id="email" placeholder="Введите почту *" required>
-              </div>
+                <div class="user-form__item">
+                  <label class="user-form__label" for="tel">Номер телефона</label>
+                  <input class="user-form__input" type="tel" name="tel" id = "tel" placeholder="Номер, пожалуйста">
+                </div>
+                <div class="user-form__item">
+                  <label class="user-form__label" for="email">Адрес почты</label>
+                  <input class="user-form__input" type="email" name="email" id="email" placeholder="Введите почту *" required>
+                </div>
               </div>
             </fieldset>
             <div class="user-form__application-container" >
@@ -221,19 +221,19 @@
                 <legend class="user-form__legend">
                   С каким приложением путешествовали?
                 </legend>
-                <div class='user-form__radio-area'>
-                  <label>
-                    <input type='radio' name='application' value='pink-ios' checked>
-                    Pink для iOS
-                  </label>
-                  <label>
-                    <input type='radio' name='application' value='pink-android'>
-                    Pink на Android
-                  </label>
-                  <label>
-                    <input type='radio' name='application' value='pink-phone'>
-                    Windows Phone
-                  </label>
+                <div class="user-form__radio-area">
+                  <div class="user-form__radio">
+                    <input type="radio" name="application" value="pink-ios" id="ios" checked>
+                    <label for="ios">Pink для iOS</label>
+                  </div>
+                  <div class="user-form__radio">
+                    <input type="radio" name="application" value="pink-android" id="android">
+                    <label for="android">Pink на Android</label>
+                  </div>
+                  <div class="user-form__radio">
+                    <input type="radio" name="application" value="pink-phone" id="phone">
+                    <label for="phone">Windows Phone</label>
+                  </div>
                 </div>
               </fieldset>
             </div>
@@ -252,6 +252,22 @@
           </form>
         </div>
       </section>
+      <div class="modal modal--error">
+        <p class="modal__title">Что-то пошло не так!</p>
+        <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <div class="modal__button-wrapper">
+          <button class="modal__button button button--form" type="button">OK</button>
+        </div>
+      </div>
+      <div class="modal modal--submit">
+        <div class="modal__wrapper">
+          <p class="modal__title">Ваша заявка отправлена</p>
+          <p class="modal__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+        </div>
+        <div class="modal__button-wrapper modal__button-wrapper--grey">
+          <button class="modal__button button button--form" type="button">Закрыть окно</button>
+        </div>
+      </div>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">

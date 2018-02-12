@@ -1,35 +1,35 @@
 .content-header {
   width: 100%;
   padding: 0;
-  margin-top: -65px; // видно сквозь закрытое меню
+  margin-top: -65px;
   background-color: @dark-blue;
   color: @white;
 }
 
 .content-header__wrapper {
-  width: @mobile-width; //фиксированная сетка
+  width: @mobile-width;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  min-height: 460px; //на главном окне фиксир. высота с картинкой, без текста, а на  других на этот фон наслаиваются
-  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  min-height: 460px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 0;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background-image: url("../../img/bg-back-mobile@2x.jpg");
+    background-image: url("../img/bg-back-mobile@2x.jpg");
     background-position: 50% 50%;
   }
 
   &--index {
-    background-image: url("../../img/iphone-hand-mobile@1x.png"), url("../../img/bg-back-mobile@1x.jpg");
+    background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
     background-size: 258px auto, cover;
     background-position: 0% 100%, 50% 0;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../../img/iphone-hand-mobile@2x.png"), url("../../img/bg-back-mobile@2x.jpg");
+      background-image: url("../img/iphone-hand-mobile@2x.png"), url("../img/bg-back-mobile@2x.jpg");
       background-position: 0% 100%, 50% 50%;
     }
   }
@@ -42,15 +42,13 @@
   font-weight: 100;
   text-align: center;
   margin: 0;
-  margin-left: 60px;
+  margin-left: 55px;
   margin-top: 201px;
   padding: 0;
   width: 230px;
 }
 
 .content-header__intro {
-  // display: block;
-  // margin-right: auto;
   margin-top: auto;
 }
 
@@ -74,20 +72,20 @@
     width: @tablet-width;
     margin: 0 auto;
     height: 730px;
-    background-image: url("../../img/bg-back-tablet@1x.jpg");
+    background-image: url("../img/bg-back-tablet@1x.jpg");
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../../img/bg-back-tablet@2x.jpg");
+      background-image: url("../img/bg-back-tablet@2x.jpg");
     }
 
     &--index {
-      background-image: url("../../img/iphone-hand-tablet@1x.png"), url("../../img/bg-back-tablet@1x.jpg");
+      background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
       background-repeat: no-repeat;
       background-position: 50% 100%, 50% 50%;
       background-size: 700px auto, cover;
 
       @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-        background-image: url("../../img/iphone-hand-tablet@2x.png"), url("../../img/bg-back-tablet@2x.jpg");
+        background-image: url("../img/iphone-hand-tablet@2x.png"), url("../img/bg-back-tablet@2x.jpg");
       }
     }
   }
@@ -109,19 +107,19 @@
   .content-header__wrapper {
     width: @desktop-width;
     height: 855px;
-    background-image: url("../../img/bg-back-desktop@1x.jpg");
+    background-image: url("../img/bg-back-desktop@1x.jpg");
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../../img/bg-back-desktop@2x.jpg");
+      background-image: url("../img/bg-back-desktop@2x.jpg");
     }
 
     &--index {
-      background-image: url("../../img/iphone-hand-desktop@1x.png"), url("../../img/bg-back-desktop@1x.jpg");
+      background-image: url("../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop@1x.jpg");
       background-size: 1050px auto, cover;
       background-position: 100% 100%, 50% 50%;
 
       @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-        background-image: url("../../img/iphone-hand-desktop@2x.png"), url("../../img/bg-back-desktop@2x.jpg");
+        background-image: url("../img/iphone-hand-desktop@2x.png"), url("../img/bg-back-desktop@2x.jpg");
       }
     }
   }
@@ -137,7 +135,7 @@
   }
 
   .content-header__intro {
-    padding-right: 170px; //проверить потом на полной картинке
+    padding-right: 170px;
   }
 
   .content-header__title {

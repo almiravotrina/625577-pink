@@ -170,11 +170,13 @@
         </p>
         <div class="gallery__list">
           <a href="#">
-            <picture class="gallery__image gallery__image--full">
-              <source media="(min-width: 1200px)" srcset="./img/panorama-desktop@1x.jpg, ./img/panorama-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px)" srcset="./img/panorama-tablet@1x.jpg, ./img/panorama-tablet@2x.jpg 2x">
-              <img src="./img/panorama-mobile@1x.jpg" srcset="./img/panorama-mobile@2x.jpg 2x" alt="Фото Анны">
-            </picture>
+            <div class="gallery__main-photo">
+              <picture class="gallery__image gallery__image--full">
+                <source media="(min-width: 1200px)" srcset="./img/panorama-desktop@1x.jpg, ./img/panorama-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="./img/panorama-tablet@1x.jpg, ./img/panorama-tablet@2x.jpg 2x">
+                <img src="./img/panorama-mobile@1x.jpg" srcset="./img/panorama-mobile@2x.jpg 2x" alt="Фото Анны">
+              </picture>
+            </div>
           </a>
           <figure class="gallery__item gallery__item--promo">
             <p class="gallery__author">Анна
@@ -327,22 +329,38 @@
         </picture>
         <div class="editor__tools">
           <div class="editor__tool">
-            <button class="button-editor" type="button">
+            <button class="button-editor button-editor--active" type="button">
               <svg width="48" height="48"><use xlink:href="#icon-editor-crop"></use></svg>
             </button>
-            <input class="editor__range" type="range" min=0 max=100 value="85">
+            <div class="editor__range">
+              <div class="editor__range-scale">
+              </div>
+              <div class="editor__range-toggle editor__range-toggle--crop">
+
+              </div>
+            </div>
           </div>
           <div class="editor__tool editor__tool--center editor__tool--top">
-            <button class="button-editor" type="button">
+            <button class="button-editor button-editor--active" type="button">
               <svg width="48" height="48"><use xlink:href="#icon-editor-fill"></use></svg>
             </button>
-            <input class="editor__range editor__range--hidden" type="range" min=-100 max=100 value="0">
+            <div class="editor__range  editor__range--hidden">
+              <div class="editor__range-scale">
+              </div>
+              <div class="editor__range-toggle editor__range-toggle--fill ">
+              </div>
+            </div>
           </div>
           <div class="editor__tool editor__tool--end editor__tool--top">
             <button class="button-editor  button-editor--active" type="button">
               <svg width="32" height="32"><use xlink:href="#icon-editor-contrast"></use></svg>
             </button>
-            <input class="editor__range editor__range--hidden" type="range" min=-100 max=100 value="0">
+            <div class="editor__range editor__range--hidden">
+              <div class="editor__range-scale">
+              </div>
+              <div class="editor__range-toggle editor__range-toggle--contrast ">
+              </div>
+            </div>
           </div>
           <div class="editor__buttons-group">
             <button class="button button--photo button--pink button--margin" type="submit">Запостить</button>

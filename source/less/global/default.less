@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
 body {
   min-width: 320px;
   margin: 0;
@@ -17,7 +23,7 @@ img {
 }
 
 .visually-hidden:not(:focus):not(:active) {
-  position: absolute;
+  /*position: absolute;
 
   width: 1px;
   height: 1px;
@@ -29,7 +35,9 @@ img {
 
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
-  overflow: hidden;
+  overflow: hidden;*/
+  display: none;
+  visibility: hidden;
 }
 
 fieldset {

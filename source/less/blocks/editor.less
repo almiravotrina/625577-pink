@@ -32,10 +32,31 @@
 }
 
 .editor__range {
-  margin: 20px 0 0 0;
+  position: relative;
+  margin: 31px 0 0 0;
   width: 240px;
   z-index: 1;
 }
+.editor__range-scale {
+  height: 2px;
+  background-color: @dark-blue;
+}
+
+.editor__range-toggle {
+  position: absolute;
+  top: -6px;
+  left: 25%;
+  width: 14px;
+  height: 14px;
+
+  background-color: transparent;
+  border: 2px solid @pink;
+  box-sizing: border-box;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
 
 @media (max-width: @mobile-only-width) {
   .editor__tool--center {
@@ -43,11 +64,12 @@
   }
 
   .editor__tool--top {
-    margin-top: -100px;
+    margin-top: -90px;
   }
 
   .editor__tool--end {
     align-items: flex-end;
+    margin-top: -93px;
   }
 
   .editor__range--hidden {
@@ -58,7 +80,7 @@
 
 .editor__buttons-group {
   width: 100%;
-  margin-top: 26px;
+  margin-top: 34px;
   padding-top: 30px;
   padding-bottom: 25px;
   display: flex;
@@ -134,6 +156,18 @@
   .editor__range {
     width: 290px;
     margin-left: 40px;
+  }
+
+  .editor__range-toggle--fill {
+    left: 87%;
+  }
+
+  .editor__range-toggle--crop {
+    left: 26%;
+  }
+
+  .editor__range-toggle--contrast {
+    left: 57%;
   }
 
   .editor__buttons-group {
