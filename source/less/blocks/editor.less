@@ -39,8 +39,13 @@
 }
 
 .editor__range-scale {
-  height: 2px;
+  height: 1px;
   background-color: @dark-blue;
+}
+
+
+.editor__range-scale--active {
+  height: 2px;
 }
 
 .editor__range-toggle {
@@ -55,6 +60,10 @@
   box-sizing: border-box;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.editor__range-toggle--active {
+  background-color: @pink;
 }
 
 @media (max-width: @mobile-only-width) {
