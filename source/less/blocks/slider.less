@@ -51,16 +51,23 @@
 }
 
 .slider__toggle {
-  width: 10px;
-  height: 10px;
+  width: 6px;
+  height: 6px;
   padding: 0;
-  background-color: @white;
-  background-image: url("../img/icon-editor-diagram-fill.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 10px 10px;
-  border: none;
+  background-color: @grey;
+  background-clip: content-box;
+  border: 3px solid transparent;
+  display: inline-block;
+  border-radius: 50%;
+  box-sizing: content-box;
+  margin: 0 5px;
 }
+
+.slider__toggle--active {
+  background-color: inherit;
+  border: 3px solid @black;
+}
+
 
 @media (min-width: @tablet-width) {
   .slider__item {

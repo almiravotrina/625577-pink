@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
@@ -163,6 +166,7 @@
         </div>
       </section>
     <section class="gallery">
+      <h2 class="visually-hidden">Галлерея фотографий</h2>
       <div class="gallery__wrapper">
         <p class="gallery__slogan">
           Взгляните на фотографии, которые выкладывают пользователи!
@@ -172,6 +176,9 @@
           <a href="#">
             <div class="gallery__main-photo">
               <picture class="gallery__image gallery__image--full">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/panorama-mobile@1x.webp 1x, img/panorama-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="./img/panorama-desktop@1x.jpg, ./img/panorama-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="./img/panorama-tablet@1x.jpg, ./img/panorama-tablet@2x.jpg 2x">
                 <img src="./img/panorama-mobile@1x.jpg" srcset="./img/panorama-mobile@2x.jpg 2x" alt="Фото Анны">
@@ -192,126 +199,145 @@
             </div>
           </figure>
           <section class="gallery__photos">
-          <figure class="gallery__item">
-            <a class="gallery__image" href="#">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="./img/photo-car-desktop@1x.jpg, ./img/photo-car-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="./img/photo-car-tablet@1x.jpg, ./img/photo-car-tablet@2x.jpg 2x">
-                <img src="./img/photo-car-mobile@1x.jpg" srcset="./img/photo-car-mobile@2x.jpg 2x" alt="Фото Левона">
-              </picture>
-            </a>
-            <p class="gallery__author">Левон
-              <span class="gallery__item-time">(5 часов назад)</span>
-            </p>
-            <p class="gallery__text">
-              Вчера он на луну летал, сегодня в руки к нам попал!
-            </p>
-            <div class="gallery__like">
-              <input class="gallery__heart button-heart" type="button" name="count">
-              <span>Нравится:</span>
-              <output name="result">356</output>
-            </div>
-          </figure>
-          <figure class="gallery__item">
-            <a class="gallery__image" href="#">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="./img/photo-drumset-desktop@1x.jpg, ./img/photo-drumset-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="./img/photo-drumset-tablet@1x.jpg, ./img/photo-drumset-tablet@2x.jpg 2x">
-                <img src="./img/photo-drumset-mobile@1x.jpg" srcset="./img/photo-drumset-mobile@2x.jpg 2x" alt="Фото Антона">
-              </picture>
-            </a>
+            <h2 class="visually-hidden">Фотографии и комментарии</h2>
+            <figure class="gallery__item">
+              <a class="gallery__image" href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-car-mobile@1x.webp 1x, img/photo-car-mobile@2x.webp 2x">
+                  <source media="(min-width: 1200px)" srcset="./img/photo-car-desktop@1x.jpg, ./img/photo-car-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="./img/photo-car-tablet@1x.jpg, ./img/photo-car-tablet@2x.jpg 2x">
+                  <img src="./img/photo-car-mobile@1x.jpg" srcset="./img/photo-car-mobile@2x.jpg 2x" alt="Фото Левона">
+                </picture>
+              </a>
+              <p class="gallery__author">Левон
+                <span class="gallery__item-time">(5 часов назад)</span>
+              </p>
+              <p class="gallery__text">
+                Вчера он на луну летал, сегодня в руки к нам попал!
+              </p>
+              <div class="gallery__like">
+                <input class="gallery__heart button-heart" type="button" name="count">
+                <span>Нравится:</span>
+                <output name="result">356</output>
+              </div>
+            </figure>
+            <figure class="gallery__item">
+              <a class="gallery__image" href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-drumset-mobile@1x.webp 1x, img/photo-drumset-mobile@2x.webp 2x">
+                  <source media="(min-width: 1200px)" srcset="./img/photo-drumset-desktop@1x.jpg, ./img/photo-drumset-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="./img/photo-drumset-tablet@1x.jpg, ./img/photo-drumset-tablet@2x.jpg 2x">
+                  <img src="./img/photo-drumset-mobile@1x.jpg" srcset="./img/photo-drumset-mobile@2x.jpg 2x" alt="Фото Антона">
+                </picture>
+              </a>
               <p class="gallery__author">Антон
-              <span class="gallery__item-time">(12 часов назад)</span>
-            </p>
-            <p class="gallery__text">
-              Соседи будут рады!
-            </p>
-            <div class="gallery__like">
-              <input class="gallery__heart button-heart" type="button" name="count">
-              <span>Нравится:</span>
-              <output name="result">666</output>
-            </div>
-          </figure>
-          <figure class="gallery__item">
-            <a class="gallery__image" href="#">
+                <span class="gallery__item-time">(12 часов назад)</span>
+              </p>
+              <p class="gallery__text">
+                Соседи будут рады!
+              </p>
+              <div class="gallery__like">
+                <input class="gallery__heart button-heart" type="button" name="count">
+                <span>Нравится:</span>
+                <output name="result">666</output>
+              </div>
+            </figure>
+            <figure class="gallery__item">
+              <a class="gallery__image" href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-window-mobile@1x.webp 1x, img/photo-window-mobile@2x.webp 2x">
+                  <source media="(min-width: 1200px)" srcset="./img/photo-window-desktop@1x.jpg, ./img/photo-window-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="./img/photo-window-tablet@1x.jpg, ./img/photo-window-tablet@2x.jpg 2x">
+                  <img src="./img/photo-window-mobile@1x.jpg" srcset="./img/photo-window-mobile@2x.jpg 2x" alt="Фото Бориса">
+                </picture>
+              </a>
+              <p class="gallery__author">Борис
+                <span class="gallery__item-time">(25 часов назад)</span>
+              </p>
+              <p class="gallery__text">
+                Здесь могла быть ваша цитата о высоком и вечном.
+              </p>
+              <div class="gallery__like">
+                <input class="gallery__heart button-heart" type="button" name="count">
+                <span>Нравится:</span>
+                <output name="result">215</output>
+              </div>
+            </figure>
+            <figure class="gallery__item">
+              <a class="gallery__image" href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-fair-mobile@1x.webp 1x, img/photo-fair-mobile@2x.webp 2x">
+                  <source media="(min-width: 1200px)" srcset="./img/photo-fair-desktop@1x.jpg, ./img/photo-fair-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="./img/photo-fair-tablet@1x.jpg, ./img/photo-fair-tablet@2x.jpg 2x">
+                  <img src="./img/photo-fair-mobile@1x.jpg" srcset="./img/photo-fair-mobile@2x.jpg 2x" alt="Фото Сергея">
+                </picture>
+              </a>
+              <p class="gallery__author">Сергей
+                <span class="gallery__item-time">(25 часов назад)</span>
+              </p>
+              <p class="gallery__text">
+                Самая кубанская в мире!
+              </p>
+              <div class="gallery__like">
+                <input class="gallery__heart button-heart" type="button" name="count">
+                <span>Нравится:</span>
+                <output name="result">4</output>
+              </div>
+            </figure>
+            <figure class="gallery__item">
+              <a class="gallery__image" href="#">
               <picture>
-                <source media="(min-width: 1200px)" srcset="./img/photo-window-desktop@1x.jpg, ./img/photo-window-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="./img/photo-window-tablet@1x.jpg, ./img/photo-window-tablet@2x.jpg 2x">
-                <img src="./img/photo-window-mobile@1x.jpg" srcset="./img/photo-window-mobile@2x.jpg 2x" alt="Фото Бориса">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-pov-mobile@1x.webp 1x, img/photo-pov-mobile@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="./img/photo-pov-desktop@1x.jpg, ./img/photo-pov-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="./img/photo-pov-tablet@1x.jpg, ./img/photo-pov-tablet@2x.jpg 2x">
+                <img src="./img/photo-pov-mobile@1x.jpg" srcset="./img/photo-pov-mobile@2x.jpg 2x" alt="Фото Максима">
               </picture>
-            </a>
-            <p class="gallery__author">Борис
-              <span class="gallery__item-time">(25 часов назад)</span>
-            </p>
-            <p class="gallery__text">
-              Здесь могла быть ваша цитата о высоком и вечном.
-            </p>
-            <div class="gallery__like">
-              <input class="gallery__heart button-heart" type="button" name="count">
-              <span>Нравится:</span>
-              <output name="result">215</output>
-            </div>
-          </figure>
-          <figure class="gallery__item">
-            <a class="gallery__image" href="#">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="./img/photo-fair-desktop@1x.jpg, ./img/photo-fair-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="./img/photo-fair-tablet@1x.jpg, ./img/photo-fair-tablet@2x.jpg 2x">
-                <img src="./img/photo-fair-mobile@1x.jpg" srcset="./img/photo-fair-mobile@2x.jpg 2x" alt="Фото Сергея">
-              </picture>
-            </a>
-            <p class="gallery__author">Сергей
-              <span class="gallery__item-time">(25 часов назад)</span>
-            </p>
-            <p class="gallery__text">
-              Самая кубанская в мире!
-            </p>
-            <div class="gallery__like">
-              <input class="gallery__heart button-heart" type="button" name="count">
-              <span>Нравится:</span>
-              <output name="result">4</output>
-            </div>
-          </figure>
-          <figure class="gallery__item">
-            <a class="gallery__image" href="#">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="./img/photo-pov-desktop@1x.jpg, ./img/photo-pov-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px)" srcset="./img/photo-pov-tablet@1x.jpg, ./img/photo-pov-tablet@2x.jpg 2x">
-              <img src="./img/photo-pov-mobile@1x.jpg" srcset="./img/photo-pov-mobile@2x.jpg 2x" alt="Фото Максима">
-            </picture>
-            </a>
-            <p class="gallery__author">Максим
-              <span class="gallery__item-time">(40 часов назад)</span>
-            </p>
-            <p class="gallery__text">
-              Где снег-то?
-            </p>
-            <div class="gallery__like">
-              <input class="gallery__heart button-heart" type="button" name="count">
-              <span>Нравится:</span>
-              <output name="result">150</output>
-            </div>
-          </figure>
-          <figure class="gallery__item">
-            <a class="gallery__image" href="#">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="./img/photo-wing-desktop@1x.jpg, ./img/photo-wing-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="./img/photo-wing-tablet@1x.jpg, ./img/photo-wing-tablet@2x.jpg 2x">
-                <img src="./img/photo-wing-mobile@1x.jpg" srcset="./img/photo-wing-mobile@2x.jpg 2x" alt="Фото Надежды">
-              </picture>
-            </a>
+              </a>
+              <p class="gallery__author">Максим
+                <span class="gallery__item-time">(40 часов назад)</span>
+              </p>
+              <p class="gallery__text">
+                Где снег-то?
+              </p>
+              <div class="gallery__like">
+                <input class="gallery__heart button-heart" type="button" name="count">
+                <span>Нравится:</span>
+                <output name="result">150</output>
+              </div>
+            </figure>
+            <figure class="gallery__item">
+              <a class="gallery__image" href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-wing-mobile@1x.webp 1x, img/photo-wing-mobile@2x.webp 2x">
+                  <source media="(min-width: 1200px)" srcset="./img/photo-wing-desktop@1x.jpg, ./img/photo-wing-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="./img/photo-wing-tablet@1x.jpg, ./img/photo-wing-tablet@2x.jpg 2x">
+                  <img src="./img/photo-wing-mobile@1x.jpg" srcset="./img/photo-wing-mobile@2x.jpg 2x" alt="Фото Надежды">
+                </picture>
+              </a>
               <p class="gallery__author">Надежда
-              <span class="gallery__item-time">(45 часов назад)</span>
-            </p>
-            <p class="gallery__text">
-              Всем GM и взаимные лайки!
-            </p>
-            <div class="gallery__like">
-              <input class="gallery__heart button-heart" type="button" name="count">
-              <span>Нравится:</span>
-              <output name="result">2560</output>
-            </div>
-          </figure>
+                <span class="gallery__item-time">(45 часов назад)</span>
+              </p>
+              <p class="gallery__text">
+                Всем GM и взаимные лайки!
+              </p>
+              <div class="gallery__like">
+                <input class="gallery__heart button-heart" type="button" name="count">
+                <span>Нравится:</span>
+                <output name="result">2560</output>
+              </div>
+            </figure>
           </section>
         </div>
         <p class="gallery__slogan">
@@ -321,8 +347,12 @@
       </div>
     </section>
     <section class="editor">
+      <h2 class="visually-hidden">Редактор фотографий</h2>
       <div class="editor__wrapper">
         <picture class="editor__picture">
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
           <source media="(min-width: 1200px)" srcset="./img/photo-road-desktop@1x.jpg, ./img/photo-road-desktop@2x.jpg 2x">
           <source media="(min-width: 660px)" srcset="./img/photo-road-tablet@1x.jpg, ./img/photo-road-tablet@2x.jpg 2x">
           <img  src="./img/photo-road-mobile@1x.jpg" srcset="./img/photo-road-mobile@2x.jpg 2x" alt="Фото пользователя">
@@ -356,9 +386,9 @@
               <svg width="32" height="32"><use xlink:href="#icon-editor-contrast"></use></svg>
             </button>
             <div class="editor__range editor__range--hidden">
-              <div class="editor__range-scale">
+              <div class="editor__range-scale editor__range-scale--active">
               </div>
-              <div class="editor__range-toggle editor__range-toggle--contrast ">
+              <div class="editor__range-toggle editor__range-toggle--active editor__range-toggle--contrast ">
               </div>
             </div>
           </div>
