@@ -79,6 +79,7 @@
   margin: 0 15px;
 
   border: none;
+  outline: none;
   background: url("../img/icon-heart.svg") no-repeat 50% 50%;
   background-size: 15px 15px;
   background-color: inherit;
@@ -108,35 +109,20 @@
   }
 }
 
-.button-editor {
-  width: 60px;
-  height: 60px;
-  padding: 0;
-  margin: 0 15px;
-
-  outline: none;
-  border: none;
-  fill: @grey;
-  background-color: inherit;
-
-  &:hover {
-    fill: @dark-grey;
-  }
-
-  &--active {
-    fill: @pink;
-  }
-}
-
-
 @media (min-width: @tablet-width) {
   .button {
     min-width: 260px;
   }
 
+  .button-editor {
+    width: 30px;
+    height: 30px;
+  }
+
   .button-editor svg {
     width: 30px;
     height: 30px;
+    fill: @pink;
   }
 
   .button--margin {

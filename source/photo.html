@@ -234,31 +234,32 @@
     <section class="editor">
       <h2 class="visually-hidden">Редактор фотографий</h2>
       <div class="editor__wrapper">
-        <picture class="editor__picture">
-          <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
-          <source media="(min-width: 1200px)" srcset="./img/photo-road-desktop@1x.jpg, ./img/photo-road-desktop@2x.jpg 2x">
-          <source media="(min-width: 660px)" srcset="./img/photo-road-tablet@1x.jpg, ./img/photo-road-tablet@2x.jpg 2x">
-          <img  src="./img/photo-road-mobile@1x.jpg" srcset="./img/photo-road-mobile@2x.jpg 2x" alt="Фото пользователя">
-        </picture>
+        <a class="editor__picture" href="#">
+          <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
+            <source media="(min-width: 1200px)" srcset="./img/photo-road-desktop@1x.jpg, ./img/photo-road-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="./img/photo-road-tablet@1x.jpg, ./img/photo-road-tablet@2x.jpg 2x">
+            <img  src="./img/photo-road-mobile@1x.jpg" srcset="./img/photo-road-mobile@2x.jpg 2x" alt="Фото пользователя">
+          </picture>
+        </a>
         <div class="editor__tools">
           <div class="editor__tool">
-            <button class="button-editor button-editor--active" type="button">
+            <div class="editor__type editor__type--active">
               <svg width="48" height="48"><use xlink:href="#sprite-icon-editor-crop"></use></svg>
-            </button>
+            </div>
             <div class="editor__range">
               <div class="editor__range-scale">
               </div>
               <div class="editor__range-toggle editor__range-toggle--crop">
-
               </div>
             </div>
           </div>
-          <div class="editor__tool editor__tool--center editor__tool--top">
-            <button class="button-editor button-editor--active" type="button">
+          <div class="editor__tool editor__tool--center">
+            <div class="editor__type">
               <svg width="48" height="48"><use xlink:href="#sprite-icon-editor-fill"></use></svg>
-            </button>
+            </div>
             <div class="editor__range  editor__range--hidden">
               <div class="editor__range-scale">
               </div>
@@ -266,14 +267,14 @@
               </div>
             </div>
           </div>
-          <div class="editor__tool editor__tool--end editor__tool--top">
-            <button class="button-editor  button-editor--active" type="button">
-              <svg width="32" height="32"><use xlink:href="#sprite-icon-editor-contrast"></use></svg>
-            </button>
+          <div class="editor__tool editor__tool--end">
+            <div class="editor__type editor__type--contrast">
+            <svg width="32" height="32"><use xlink:href="#sprite-icon-editor-contrast"></use></svg>
+            </div>
             <div class="editor__range editor__range--hidden">
-              <div class="editor__range-scale editor__range-scale--active">
+              <div class="editor__range-scale">
               </div>
-              <div class="editor__range-toggle editor__range-toggle--active editor__range-toggle--contrast ">
+              <div class="editor__range-toggle editor__range-toggle--contrast ">
               </div>
             </div>
           </div>
