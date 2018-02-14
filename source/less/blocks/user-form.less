@@ -1,7 +1,7 @@
 .user-form {
   width: 100%;
   padding: 0;
-  margin-top: -225px; //залезает на предыдущий блок
+  margin-top: -225px;
   background-color: @white;
 }
 
@@ -9,6 +9,7 @@
   width: @mobile-width;
   display: flex;
   flex-direction: column;
+  padding: 0;
 }
 
 @media (max-width: @mobile-only-width) {
@@ -54,7 +55,7 @@
 .user-form__contacts {
   display: flex;
   flex-direction: column;
-  margin: 21px 20px 42px 20px;
+  margin: 15px 20px 42px 20px;
 }
 
 .user-form__achievement-container,
@@ -67,7 +68,7 @@
   display: flex;
   flex-direction: column;
   padding: 18px 20px 0 20px;
-  margin: 22px 0 35px 0;
+  margin: 20px 0 35px 0;
 
   .user-form__input {
     width: 280px;
@@ -88,7 +89,7 @@
   text-transform: uppercase;
   color: @pink;
   margin: 0;
-  padding: 16px 20px 5px 22px;
+  padding: 15px 20px 5px 21px;
 }
 
 .user-form__input {
@@ -122,11 +123,11 @@
 .user-form__checkbox-area {
   display: flex;
   flex-direction: column;
-  padding-top: 40px;
+  padding-top: 34px;
   padding-bottom: 42px;
 
   .user-form__checkbox {
-    margin: 24px 0;
+    margin: 18px 0;
 
     &:first-child {
       margin-top: 0;
@@ -141,13 +142,14 @@
     display: inline-block;
     position: relative;
     font-size: 18px;
-    line-height: 35px;
+    line-height: 46px;
     padding-left: 70px;
     cursor: pointer;
 
     &::before {
       content: "";
       position: absolute;
+      top: 5px;
       left: 0;
       width: 35px;
       height: 35px;
@@ -236,13 +238,17 @@
 }
 
 .user-form__button {
-  margin: 9px 20px;
+  margin: 11px 20px;
 }
 
 .user-form__tip {
-  margin: 26px 0 15px 0;
+  margin: 27px 0 15px 0;
   text-transform: uppercase;
   text-align: center;
+
+  sup {
+    color: @pink;
+  }
 
   span {
     display: none;
@@ -275,22 +281,18 @@
   .user-form__achievement-container {
     background-color: @white;
     padding-top: 40px;
-    padding-bottom: 18px;
+    padding-bottom: 13px;
 
     br {
       display: none;
     }
   }
 
-  .user-form__label {
-    padding-left: 0;
-  }
-
   .user-form__checkbox-area {
     margin-top: 0;
     margin-bottom: 0;
     padding-top: 20px;
-    padding-bottom: 32px;
+    padding-bottom: 25px;
 
     label {
       padding-left: 60px;
@@ -307,6 +309,11 @@
     order: -3;
     margin-bottom: 30px;
 
+    .user-form__label {
+      padding: 10px 0 5px 0;
+      margin-right: 20px;
+    }
+
     .user-form__item:last-child {
       margin-bottom: 0;
     }
@@ -318,7 +325,7 @@
     margin-top: 26px;
 
     .user-form__contacts-wrapper {
-      margin-top: 21px;
+      margin-top: 15px;
     }
 
     .user-form__item {
@@ -370,6 +377,7 @@
     margin-top: 0;
     margin-bottom: 0;
     padding-bottom: 30px;
+    padding-top: 25px;
 
     .user-form__radio {
       margin: 20px 0 20px 0;
@@ -379,7 +387,7 @@
       }
 
       &:last-child {
-        margin-bottom: 0;
+        margin-bottom: 8px;
       }
     }
 
@@ -393,9 +401,10 @@
     margin: 0;
 
     .user-form__input {
-      width: 497px;
+      width: 500px;
       min-height: 198px;
-      margin-bottom: 21px;
+      margin-bottom: 26px;
+      padding: 18px 20px;
     }
   }
 
@@ -454,12 +463,13 @@
   .user-form__application-container {
     width: 438px;
     flex-shrink: 0;
-    padding: 0;
     margin: 0;
     margin-top: 10px;
 
     .user-form__radio-area {
       margin-left: 20px;
+      padding-bottom: 25px;
+      padding-top: 31px;
     }
   }
 
@@ -494,7 +504,7 @@
 
   .user-form__achievement-container {
     width: 940px;
-    padding: 20px 0 15px 0;
+    padding: 15px 0 15px 0;
   }
 
   .user-form__checkbox-area {
@@ -504,13 +514,13 @@
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 0;
-    margin-bottom: 45px;
+    margin-bottom: 32px;
     margin-top: 22px;
     box-sizing: border-box;
 
     .user-form__checkbox {
       margin: 0;
-      margin-bottom: 48px;
+      margin-bottom: 36px;
     }
 
     .user-form__checkbox:nth-child(2n) {

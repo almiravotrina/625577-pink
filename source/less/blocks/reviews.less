@@ -1,10 +1,10 @@
 .reviews {
-  width: 320px; //фиксированная сетка
+  width: 320px;
   margin: 0 auto;
   padding: 0;
-  margin-top: -44px;//наезжает на картинку с телефоном
-  margin-bottom: 20px;
-  z-index: 2;//чтобы лечь на телефон в преимуществах
+  margin-top: -44px;
+  margin-bottom: 16px;
+  z-index: 2;
   background-color: @white;
 }
 
@@ -38,6 +38,7 @@
   .reviews {
     width: @tablet-width;
     margin-top: 0;
+    margin-bottom: 19px;
   }
 
   .reviews__header {
@@ -88,7 +89,7 @@
 
   .reviews__author-name {
     font-size: 20px;
-    margin-top: 37px;
+    margin-top: 33px;
     margin-bottom: 0;
 
     p {
@@ -128,8 +129,14 @@
     height: 350px;
     margin-right: 64px;
 
+    img {
+      width: 300px;
+      height: 350px;
+    }
+
     &::before {
-      left: 55px;
+      top: 175px;
+      left: 80px;
       font-size: 116px;
     }
   }
