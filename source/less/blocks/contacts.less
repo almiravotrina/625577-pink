@@ -37,11 +37,15 @@
 
   &:hover {
     color: @dark-blue;
-    text-decoration: underline;
+    border-bottom: 2px solid @dark-blue;
+    width: max-content;
+    align-self: center;
   }
 
-  &:active {
+  &:active,
+  &:focus {
     color: fade(@dark-blue, 30%);
+    border-bottom: none;
   }
 }
 

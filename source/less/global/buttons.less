@@ -17,7 +17,8 @@
     background-color: @white;
   }
 
-  &:active {
+  &:active,
+  &:focus {
     color: fade(@pink, 30%);
   }
 }
@@ -29,7 +30,8 @@
     background-color: inherit;
   }
 
-  &:active {
+  &:active,
+  &:focus {
     color: @white;
     border: none;
   }
@@ -48,7 +50,8 @@
     background-color: @pink;
   }
 
-  &:active {
+  &:active,
+  &:focus {
     color: fade(@white, 30%);
     background-color: @pink;
   }
@@ -64,7 +67,8 @@
     background-color: inherit;
   }
 
-  &:active {
+  &:active,
+  &:focus {
     color: fade(@white, 30%);
     border: fade(@dark-grey, 30%);
     background-color: fade(@dark-grey, 30%);
@@ -98,12 +102,13 @@
     background-color: #1b9b5e;
   }
 
-  &:active {
+  &:active,
+  &:focus {
     color: fade(@white, 30%);
     background-color: #1b9b5e;
   }
 
-  &--disabled {
+  &:disabled {
     color: @white;
     background-color: @light-grey;
   }

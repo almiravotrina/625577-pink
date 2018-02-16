@@ -18,13 +18,27 @@
         <div class="main-nav__wrapper">
           <div class="main-nav__header">
             <a href="index.html" >
-              <svg class="main-nav__logo main-nav__logo--desktop desktop-only" width="146" height="40"><use xlink:href="#sprite-logo-pink-white-desktop"></use></svg>
-              <svg class="main-nav__logo main-nav__logo--tablet mobile-hidden" width="146" height="40"><use xlink:href="#sprite-logo-pink-white-tablet"></use></svg>
-              <svg class="main-nav__logo main-nav__logo--mobile" width="75" height="23"><use xlink:href="#sprite-logo-pink-white-mobile"></use></svg>
+              <svg class="main-nav__logo main-nav__logo--desktop desktop-only" width="146" height="40" arial-labelledby="logo">
+                <use xlink:href="#sprite-logo-pink-white-desktop"></use>
+                <title id="logo">Логотип</title>
+              </svg>
+              <svg class="main-nav__logo main-nav__logo--tablet mobile-hidden" width="146" height="40">
+                <use xlink:href="#sprite-logo-pink-white-tablet"></use>
+              </svg>
+              <svg class="main-nav__logo main-nav__logo--mobile" width="75" height="23">
+                <use xlink:href="#sprite-logo-pink-white-mobile">
+                </use>
+              </svg>
             </a>
             <button class="main-nav__toggle main-nav__logo" type="button">
-              <svg class="main-nav__cross" width="24" height="24"><use xlink:href="#sprite-icon-menu-cross"></use></svg>
-              <svg class="main-nav__burger" width="50" height="24"><use xlink:href="#sprite-icon-menu-burger"></use></svg>
+              <svg class="main-nav__cross" width="24" height="24" arial-labelledby="logo">
+                <use xlink:href="#sprite-icon-menu-cross"></use>
+                <title id="close">Закрыть меню</title>
+              </svg>
+              <svg class="main-nav__burger" width="50" height="24" arial-labelledby="open">
+                <use xlink:href="#sprite-icon-menu-burger"></use>
+                <title id="open">Открыть меню</title>
+              </svg>
             </button>
           </div>
           <ul class="main-nav__list">
@@ -161,11 +175,16 @@
               </p>
             </blockquote>
             <button class="reviews__prev desktop-only" type="button">
-              <svg width="22" height="42"><use xlink:href="#sprite-icon-review-arrow-left"></use></svg>
-
+              <svg width="22" height="42">
+                <use xlink:href="#sprite-icon-review-arrow-left" arial-labelledby="prev"></use>
+                <title id="prev">Предыдущий отзыв</title>
+              </svg>
             </button>
             <button class="reviews__next desktop-only" type="button">
-              <svg width="22" height="42"><use xlink:href="#sprite-icon-review-arrow-right"></use></svg>
+              <svg width="22" height="42">
+                <use xlink:href="#sprite-icon-review-arrow-right" arial-labelledby="next"></use>
+                <title id="next">Предыдущий отзыв</title>
+              </svg>
             </button>
           </div>
           <p class="reviews__toggles slider__toggles">
@@ -202,15 +221,24 @@
               </div>
               <div class="prices__service slider__column">
                 <span>Розовый фильтр</span>
-                <svg class="prices__image" width="24" height="24"><use xlink:href="#sprite-icon-yes"></use></svg>
+                <svg class="prices__image" width="24" height="24" role="img">
+                  <use xlink:href="#sprite-icon-yes"></use>
+                  <title>Доступен</title>
+                </svg>
               </div>
               <div class="prices__service slider__column">
                 <span>Розовый фильтр</span>
-                <svg class="prices__image" width="24" height="24"><use xlink:href="#sprite-icon-yes"></use></svg>
+                <svg class="prices__image" width="24" height="24" role="img">
+                  <use xlink:href="#sprite-icon-yes"></use>
+                  <title>Доступен</title>
+                </svg>
               </div>
               <div class="prices__service slider__column">
                 <span>Розовый фильтр</span>
-                <svg class="prices__image" width="24" height="24"><use xlink:href="#sprite-icon-yes"></use></svg>
+                <svg class="prices__image" width="24" height="24" role="img">
+                  <use xlink:href="#sprite-icon-yes"></use>
+                  <title>Доступен</title>
+                </svg>
               </div>
             </li>
             <li class="prices__services slider__row">
@@ -219,15 +247,24 @@
               </div>
               <div class="prices__service slider__column">
                 <span>Смайлики</span>
-                <svg class="prices__image" width="24" height="24"><use xlink:href="#sprite-icon-no"></use></svg>
+                <svg class="prices__image" width="24" height="24" role="img">
+                  <use xlink:href="#sprite-icon-no"></use>
+                  <title>Не доступны</title>
+                </svg>
               </div>
               <div class="prices__service  slider__column">
                 <span>Смайлики</span>
-                <svg class="prices__image" width="24" height="24"><use xlink:href="#sprite-icon-yes"></use></svg>
+                <svg class="prices__image" width="24" height="24" role="img">
+                  <use xlink:href="#sprite-icon-yes"></use>
+                  <title>Доступны</title>
+                </svg>
               </div>
               <div class="prices__service slider__column">
                 <span>Смайлики</span>
-                <svg class="prices__image" width="24" height="24"><use xlink:href="#sprite-icon-yes"></use></svg>
+                <svg class="prices__image" width="24" height="24" role="img">
+                  <use xlink:href="#sprite-icon-yes"></use>
+                  <title>Доступны</title>
+                </svg>
               </div>
             </li>
             <li class="prices__services slider__row">
@@ -236,15 +273,24 @@
             </div>
             <div class="prices__service slider__column">
               <span>Комментарии</span>
-              <svg class="prices__image" width="24" height="24"><use xlink:href="#sprite-icon-no"></use></svg>
+              <svg class="prices__image" width="24" height="24" role="img">
+                <use xlink:href="#sprite-icon-no"></use>
+                <title>Не доступны</title>
+              </svg>
             </div>
             <div class="prices__service slider__column">
               <span>Комментарии</span>
-              <svg class="prices__image" width="24" height="24"><use xlink:href="#sprite-icon-no"></use></svg>
+              <svg class="prices__image" width="24" height="24" role="img">
+                <use xlink:href="#sprite-icon-no"></use>
+                <title>Не доступны</title>
+              </svg>
             </div>
             <div class="prices__service slider__column">
               <span>Комментарии</span>
-              <svg class="prices__image" width="24" height="24"><use xlink:href="#sprite-icon-yes"></use></svg>
+              <svg class="prices__image" width="24" height="24" role="img">
+                <use xlink:href="#sprite-icon-yes"></use>
+                <title>Доступны</title>
+              </svg>
             </div>
           </li>
           </ul>
@@ -271,8 +317,10 @@
             <span class="contacts__label">Приезжайте в гости:</span> ул. Большая <br> Конюшенная, 19/8
           </p>
         </div>
-        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043705196!2d30.320889251977512!3d59.9387941817873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1518104388342" style="border:0" allowfullscreen></iframe>
-        <div class="page-footer__links page-footer__links--index mobile-hidden">
+        <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043705196!2d30.320889251977512!3d59.9387941817873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1518104388342" style="border:0" allowfullscreen></iframe>
+        </div>
+          <div class="page-footer__links page-footer__links--index mobile-hidden">
           <div class="page-footer__item">
             <a class="page-footer__link" href="index.html">
               <svg class="page-footer__logo page-footer__logo--desktop" width="146" height="40"><use xlink:href="#sprite-logo-pink-blue-desktop"></use></svg>
@@ -288,6 +336,7 @@
             <p class="copyright__text">Разработано</p>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
               <svg width="27" height="34"><use xlink:href="#sprite-logo-htmlacademy"></use></svg>
+              HTML academy
             </a>
           </div>
         </div>

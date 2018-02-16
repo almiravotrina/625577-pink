@@ -44,11 +44,24 @@
   border-radius: 50%;
   box-sizing: content-box;
   margin: 0 5px;
+
+  &:hover {
+    background-color: @dark-grey;
+  }
+
+  &:active,
+  &:focus {
+    background-color: @light-grey;
+  }
 }
 
 .slider__toggle--active {
-  background-color: inherit;
+  background-color: transparent;
   border: 3px solid @black;
+
+  &:hover {
+    background-color: transparent;
+  }
 }
 
 

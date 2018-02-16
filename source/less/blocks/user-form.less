@@ -3,6 +3,13 @@
   padding: 0;
   margin-top: -225px;
   background-color: @white;
+
+  fieldset {
+    display: block;
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .user-form__wrapper {
@@ -161,7 +168,8 @@
       border: 2px solid @dark-blue;
     }
 
-    &:active::before {
+    &:active::before,
+    &:focus::before {
       border: 2px solid @pink;
     }
   }
@@ -220,7 +228,8 @@
       border: 2px solid @dark-blue;
     }
 
-    &:active::before {
+    &:active::before,
+    &:focus::before {
       border: 2px solid @pink;
     }
   }
@@ -258,6 +267,11 @@
 @media (min-width: @tablet-width) {
   .user-form {
     margin-top: -290px;
+
+    fieldset {
+      border: 2px solid @light-grey;
+      padding: 20px 58px 20px 58px;
+    }
   }
 
   .user-form__wrapper {
@@ -329,6 +343,10 @@
       margin-top: 16px;
     }
 
+    .user-form__input {
+      height: 63px;
+    }
+
     .user-form__item {
       flex-direction: column-reverse;
       align-items: flex-start;
@@ -353,6 +371,7 @@
 
       &:last-child::after {
         background-image: url("../img/icon-mail.svg");
+        background-size: 18px 14px;
       }
     }
 
@@ -435,6 +454,10 @@
   .user-form {
     width: 100%;
     margin-top: -460px;
+
+    fieldset {
+      padding: 20px 55px 20px 55px;
+    }
   }
 
   .user-form__wrapper {

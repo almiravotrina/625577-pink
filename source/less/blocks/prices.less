@@ -37,7 +37,7 @@
   min-height: 60px;
   flex-shrink: 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   border-right: 1px solid @light-grey;
   background-color: @white;
@@ -53,10 +53,11 @@
   }
 }
 
-.prices__service--active {
-  width: 140px;
+.prices__image {
+  display: block;
+  margin-left: auto;
+  margin-right: 25px;
 }
-
 
 .prices__tariff {
   width: 100%;
@@ -117,12 +118,6 @@
   font-size: 24px;
   font-weight: 100;
   line-height: 30px;
-}
-
-.prices__image {
-  display: block;
-  margin-left: auto;
-  margin-right: 25px;
 }
 
 @media (min-width: @tablet-width) {
