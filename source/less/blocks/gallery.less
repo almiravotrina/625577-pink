@@ -20,7 +20,7 @@
 }
 
 .gallery__slogan:last-of-type {
-  margin: 32px auto 40px auto;
+  margin: 29px auto 40px auto;
 }
 
 .gallery__list {
@@ -128,6 +128,16 @@
   }
 
   .gallery__main-photo {
+    overflow: hidden;
+    width: 660px;
+    height: 509px;
+    display: flex;
+    justify-content: center;
+
+    img {
+      min-width: 700px;
+    }
+
     &::after {
       top: 58px;
     }
@@ -147,7 +157,7 @@
   }
 
   .gallery__image--full {
-    width: 660px;
+    min-width: 700px;
     height: 509px;
   }
 
@@ -252,6 +262,9 @@
   }
 
   .gallery__main-photo {
+    width: 1200px;
+    height: 505px;
+
     &::after {
       top: 54px;
       right: 130px;
