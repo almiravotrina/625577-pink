@@ -7,8 +7,9 @@
 }
 
 .content-header__wrapper {
-  width: @mobile-width;
+  width: 280px;
   margin: 0 auto;
+  padding: 0 20px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -42,7 +43,7 @@
   font-weight: 100;
   text-align: center;
   margin: 0;
-  margin-left: 55px;
+  margin-left: 34px;
   margin-top: 201px;
   padding: 0;
   width: 230px;
@@ -54,7 +55,6 @@
 
 .content-header__title {
   margin: 94px auto 0 auto;
-  width: 100%;
   padding: 0;
   text-align: center;
   font-size: 24px;
@@ -68,8 +68,8 @@
   }
 
   .content-header__wrapper {
-    width: @tablet-width;
-    margin: 0 auto;
+    width: 620px;
+    padding: 0 20px;
     height: 730px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
 
@@ -96,7 +96,7 @@
   }
 
   .content-header__title {
-    margin-top: 178px;
+    margin: 178px auto 0 auto;
     font-size: 50px;
     line-height: 60px;
   }
@@ -104,7 +104,8 @@
 
 @media (min-width: @desktop-width) {
   .content-header__wrapper {
-    width: @desktop-width;
+    width: 960px;
+    padding: 0 120px;
     height: 855px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
 
@@ -126,7 +127,7 @@
   .content-header__slogan {
     font-size: 50px;
     line-height: 60px;
-    margin-left: 155px;
+    margin-left: 35px;
     margin-top: 217px;
     padding: 0;
     text-align: center;
@@ -138,6 +139,7 @@
   }
 
   .content-header__title {
+    margin: 94px auto 0 auto;
     margin-top: 170px;
   }
 }

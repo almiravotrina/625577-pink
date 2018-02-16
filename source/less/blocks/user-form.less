@@ -295,7 +295,7 @@
     padding-bottom: 25px;
 
     label {
-      padding-left: 60px;
+      padding-left: 63px;
     }
   }
 
@@ -322,10 +322,11 @@
   .user-form__contacts {
     order: -1;
     margin: 20px;
+    margin-bottom: 16px;
     margin-top: 26px;
 
     .user-form__contacts-wrapper {
-      margin-top: 15px;
+      margin-top: 16px;
     }
 
     .user-form__item {
@@ -339,7 +340,7 @@
         content: "";
         position: absolute;
         top: 2px;
-        right: 0;
+        right: 2px;
         width: 60px;
         height: 60px;
         box-sizing: border-box;
@@ -360,7 +361,7 @@
     }
 
     .user-form__label {
-      padding-left: 19px;
+      padding-left: 22px;
       padding-top: 9px;
     }
   }
@@ -376,8 +377,8 @@
   .user-form__radio-area {
     margin-top: 0;
     margin-bottom: 0;
+    padding-top: 27px;
     padding-bottom: 30px;
-    padding-top: 25px;
 
     .user-form__radio {
       margin: 20px 0 20px 0;
@@ -392,7 +393,12 @@
     }
 
     label {
-      padding-left: 59px;
+      padding-left: 63px;
+
+      &::before {
+        top: 0;
+        left: 2px;
+      }
     }
   }
 
@@ -402,14 +408,15 @@
 
     .user-form__input {
       width: 500px;
-      min-height: 198px;
+      min-height: 195px;
       margin-bottom: 26px;
-      padding: 18px 20px;
+      margin-top: 19px;
+      padding: 15px 20px;
     }
   }
 
   .user-form__button {
-    margin: 66px 20px 0 20px;
+    margin: 64px 20px 0 20px;
     width: 300px;
   }
 
@@ -468,16 +475,16 @@
 
     .user-form__radio-area {
       margin-left: 20px;
-      padding-bottom: 25px;
-      padding-top: 31px;
+      padding-bottom: 30px;
+      padding-top: 27px;
     }
   }
 
   .user-form__contacts {
     width: 940px;
     margin: 0;
-    margin-top: 30px;
-    margin-bottom: 25px;
+    margin-top: 27px;
+    margin-bottom: 30px;
     padding-bottom: 10px;
 
     .user-form__contacts-wrapper {
@@ -498,13 +505,14 @@
     }
 
     .user-form__label {
-      padding-left: 20px;
+      padding-left: 23px;
+      padding-top: 11px;
     }
   }
 
   .user-form__achievement-container {
     width: 940px;
-    padding: 15px 0 15px 0;
+    padding: 13px 0 15px 0;
   }
 
   .user-form__checkbox-area {
@@ -531,6 +539,10 @@
     .user-form__checkbox:nth-child(2) {
       margin-right: 35px;
     }
+
+    label::before {
+      left: 3px;
+    }
   }
 
   .user-form__description {
@@ -538,12 +550,15 @@
     margin-left: 0;
     margin-right: 0;
     padding: 0;
-    margin-top: 39px;
-    margin-bottom: 42px;
+    margin-top: 40px;
+    margin-bottom: 47px;
 
     .user-form__input {
       width: 820px;
       min-height: 125px;
+      padding: 10px 20px;
+      margin-bottom: 21px;
+      margin-top: 15px;
     }
   }
 
@@ -563,7 +578,7 @@
 
   .user-form__form > .user-form__item:last-of-type {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 16px;
     margin-bottom: 0;
   }
 }
