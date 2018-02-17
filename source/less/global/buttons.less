@@ -20,6 +20,7 @@
   &:active,
   &:focus {
     color: fade(@pink, 30%);
+    background-color: @white;
   }
 }
 
@@ -119,17 +120,6 @@
     min-width: 260px;
   }
 
-  .button-editor {
-    width: 30px;
-    height: 30px;
-  }
-
-  .button-editor svg {
-    width: 30px;
-    height: 30px;
-    fill: @pink;
-  }
-
   .button--margin {
     margin: 14px 0;
     margin-left: 10px;
@@ -137,15 +127,6 @@
 }
 
 @media (min-width: @desktop-width) {
-  .button-editor {
-    margin: 0;
-
-    svg {
-      width: 45px;
-      height: 45px;
-    }
-  }
-
   .button--margin {
     margin: 0;
   }

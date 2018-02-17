@@ -18,13 +18,26 @@
       <div class="main-nav__wrapper">
         <div class="main-nav__header">
           <a href="index.html" >
-            <svg class="main-nav__logo main-nav__logo--desktop desktop-only" width="146" height="40"><use xlink:href="#sprite-logo-pink-white-desktop"></use></svg>
-            <svg class="main-nav__logo main-nav__logo--tablet mobile-hidden" width="146" height="40"><use xlink:href="#sprite-logo-pink-white-tablet"></use></svg>
-            <svg class="main-nav__logo main-nav__logo--mobile" width="75" height="23"><use xlink:href="#sprite-logo-pink-white-mobile"></use></svg>
+            <svg class="main-nav__logo main-nav__logo--desktop desktop-only" width="146" height="40" aria-labelledby="logo">
+              <use xlink:href="#sprite-logo-pink-white-desktop"></use>
+              <title id="logo">Логотип</title>
+            </svg>
+            <svg class="main-nav__logo main-nav__logo--tablet mobile-hidden" width="146" height="40">
+              <use xlink:href="#sprite-logo-pink-white-tablet"></use>
+            </svg>
+            <svg class="main-nav__logo main-nav__logo--mobile" width="75" height="23">
+              <use xlink:href="#sprite-logo-pink-white-mobile"></use>
+            </svg>
           </a>
           <button class="main-nav__toggle main-nav__logo" type="button">
-            <svg class="main-nav__cross" width="24" height="24"><use xlink:href="#sprite-icon-menu-cross"></use></svg>
-            <svg class="main-nav__burger" width="50" height="24"><use xlink:href="#sprite-icon-menu-burger"></use></svg>
+            <svg class="main-nav__cross" width="24" height="24" aria-labelledby="logo">
+              <use xlink:href="#sprite-icon-menu-cross"></use>
+              <title id="close">Закрыть меню</title>
+            </svg>
+            <svg class="main-nav__burger" width="50" height="24" aria-labelledby="open">
+              <use xlink:href="#sprite-icon-menu-burger"></use>
+              <title id="open">Открыть меню</title>
+            </svg>
           </button>
         </div>
         <ul class="main-nav__list">
@@ -184,6 +197,7 @@
             <a class="page-footer__link" href="index.html">
               <svg class="page-footer__logo page-footer__logo--desktop" width="146" height="40"><use xlink:href="#sprite-logo-pink-blue-desktop"></use></svg>
               <svg class="page-footer__logo" width="146" height="40"><use xlink:href="#sprite-logo-pink-blue-mobile"></use></svg>
+              Возврат на главную страницу
             </a>
           </div>
           <div class="page-footer__item social">
@@ -195,6 +209,7 @@
             <p class="copyright__text">Разработано</p>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
               <svg width="27" height="34"><use xlink:href="#sprite-logo-htmlacademy"></use></svg>
+              HTML academy
             </a>
           </div>
         </div>

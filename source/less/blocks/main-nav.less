@@ -28,6 +28,10 @@
   }
 }
 
+a:focus .main-nav__logo {
+  fill: fade(@white, 30%);
+}
+
 .main-nav__toggle {
   margin-left: auto;
   cursor: pointer;
@@ -101,7 +105,8 @@
   color: @pink;
 }
 
-.main-nav__item a:active {
+.main-nav__item a:active,
+.main-nav__item a:focus {
   color: fade(@white, 30%);
 }
 

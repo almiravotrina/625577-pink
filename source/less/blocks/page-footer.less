@@ -55,6 +55,8 @@
   display: block;
   width: 150px;
   height: 60px;
+  font-size: 0;
+  tabindex: 1;
 }
 
 .page-footer__logo {
@@ -64,11 +66,15 @@
     fill: @pink;
   }
 
-  &:active,
-  &:focus {
+  &:active {
     fill: @dark-blue;
     opacity: 0.3;
   }
+}
+
+a:focus .page-footer__logo {
+  fill: @dark-blue;
+  opacity: 0.3;
 }
 
 .page-footer__logo--desktop {

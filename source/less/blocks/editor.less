@@ -44,12 +44,14 @@
     fill: @grey;
     background-color: transparent;
     z-index: 1;
+    tab-index: 1;
 
     &:hover {
       fill: @dark-grey;
     }
 
-    &--active {
+    &--active,
+    &:focus {
       fill: @pink;
     }
   }
@@ -83,6 +85,7 @@
   box-sizing: border-box;
   border-radius: 50%;
   cursor: pointer;
+  tabindex: 1;
 }
 
 .editor__range-toggle--crop {
@@ -97,7 +100,8 @@
   left: 46px;
 }
 
-.editor__range-toggle--active {
+.editor__range-toggle--active,
+.editor__range-toggle:focus {
   background-color: @pink;
 }
 
@@ -127,6 +131,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   border-top: 1px solid @grey;
 }
 
